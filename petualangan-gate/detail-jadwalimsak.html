@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ramadan Jernih Berbagi - Kompas.com</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="apple-touch-icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+    <link rel="shortcut icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="fixed w-full bg-jb-lightgreen bg-no-repeat bg-right-top bg-contain z-10 bg-header transition-all lg:rounded-none">
+            <div class="header-container container px-5 py-3 relative h-[52px] flex items-center justify-between lg:h-auto lg:flex-col">
+                <div class="header-logo w-16 transition-all overflow-hidden lg:max-h-14 lg:mx-auto lg:w-32">
+                    <a href="index.html">
+                        <img src="images/logo-jernihberbagi.svg" alt="" />
+                    </a>
+                </div>
+                <div class="header-mobile w-10 lg:hidden">
+                    <img src="images/menu.svg" alt="" />
+                </div>
+                <div class="menu-mobile absolute top-[52px] w-full left-0 bg-jb-blue text-white p-2 overflow-x-scroll flex gap-4 scrollbar-none lg:hidden">
+                    <a href="index.html#pengetahuan" class="shrink-0 text-xs font-bold">Jernih Berbagi Pengetahuan</a>
+                    <a href="index.html#kebahagiaan" class="shrink-0 text-xs font-bold">Jernih Berbagi kebahagiaan</a>
+                    <a href="index.html#silaturahmi" class="shrink-0 text-xs font-bold">Jernih Bersilaturahmi</a>
+                </div>
+                <div class="header-menu absolute top-[84px] left-0 w-screen max-h-0 bg-jb-lightgreen rounded-b-2xl overflow-hidden transition-all lg:rounded-none lg:relative lg:top-0 lg:w-full lg:bg-transparent lg:mt-4 lg:max-h-max lg:overflow-visible">
+                    <ul class="menu-inner px-5 py-2 lg:flex lg:justify-around lg:py-0 lg:items-center">
+                        <li class="relative py-2 text-sm font-bold hidden lg:block ">
+                            <a href="index.html#pengetahuan" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERBAGI PENGETAHUAN </a>
+                        </li>
+                        <li class="relative py-2 text-sm font-bold hidden lg:block ">
+                            <a href="index.html#kebahagiaan" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERBAGI KEBAHAGIAAN </a>
+                        </li>
+                        <li class="relative py-2 text-sm font-bold hidden lg:block ">
+                            <a href="index.html#silaturahmi" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERSILATURAHMI </a>
+                        </li>
+                        <li class="relative py-2 text-sm font-bold lg:p-0 ">
+                            <div class="profile-trigger relative w-full text-jb-blue transition-colors hidden cursor-default lg:block">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-4 h-4">
+                                        <img src="images/icon-profil.svg" alt="" />
+                                    </div>
+                                    <div>
+                                        <p>Hi, <span>User1234</span></p>
+                                        <p class="text-xs font-normal">Poin: <span>0</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-tulip lg:hidden lg:absolute lg:right-0 lg:w-72 lg:p-4 lg:rounded-xl lg:bg-jb-lightgreen">
+                                <div class="flex items-center justify-between mb-2 md:border-b md:border-b-jb-blue/50 md:pb-2">
+                                    <div class="flex gap-2 items-center">
+                                        <div class="max-w-[25px] h-[25px] rounded-[50%] overflow-hidden">
+                                            <img src="images/icon-profil.svg" alt="" class="w-full" />
+                                        </div>
+                                        <div class="text-left">
+                                            <a href="dashboard.html" class="block">
+                                                <p class="text-jb-blue font-bold text-sm text-left">Hi, <span>User1234!</span></p>
+                                                <div class="text-jb-yellow text-xs leading-none py-1">Lihat Profil</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="text-jb-blue text-xs text-left">Poin: 0</p>
+                                </div>
+                                <div class="text-center my-2 md:border-0">
+                                    <p class="text-xs text-jb-blue mb-2">Kumpulkan poin dengan ikut aktivitasnya</p>
+                                    <a href="dashboard.html" class="bg-jb-blue py-2 px-4 text-xs rounded-2xl text-white font-bold shadow w-full block">Kumpulkan poin sekarang</a>
+                                </div>
+                                <div class="bg-jb-green rounded-xl p-2 border text-center md:p-4">
+                                    <p class="text-xs text-white mb-2">Verifikasikan data dirimu untuk menukarkan poin</p>
+                                    <button class="bg-jb-yellow py-2 px-4 text-xs rounded-2xl text-white font-bold w-full" data-micromodal-trigger="modal-identitas">Verifikasi Sekarang</button>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="pt-16 lg:pt-32">
+            <section class="bg-cover bg-center bg-no-repeat bg-main">
+                <div class="container px-5 pt-10 pb-8">
+                    <h1 class="text-2xl font-changa mt-3 text-jb-navy mb-4 md:text-4xl">Jadwal Imsak, Buka Puasa, dan Waktu Shalat di KOTA JAKARTA Ramadhan 2023</h1>
+
+                    <p class="mb-4 text-jb-navy">Kompas.com - Bagi Anda yang tinggal di KOTA JAKARTA, simpan dan bagikan halaman ini untuk mengetahui jadwal imsakiyah dan waktu buka puasa di kota Anda.</p>
+                    <p class="mb-4 text-jb-navy">Jadwal imsakiyah ini juga memuat jadwal shalat 5 waktu untuk shalat subuh, shalat dzuhur, shalat ashar, shalat maghrib, dan shalat isya.</p>
+                    <p class="mb-4 text-jb-navy">Pemerintah Indonesia telah menetapkan 1 Ramadhan 1444 Hijriah yang menandai ibadah bulan puasa 2023 jatuh pada Minggu (3/4/2022). Penetapan awal Ramadhan ini berdasarkan sidang isbat yang dilakukan Kementerian Agama pada Jumat (1/4/2022).</p>
+                    <p class="mb-4 text-jb-navy">Berikut ini jadwal imsakiyah dan waktu buka puasa di KOTA JAKARTA :</p>
+
+                    <div class="w-full">
+                        <div class="flex flex-col justify-between gap-4 md:flex-row">
+                            <div class="">
+                                <form class="" action="#">
+                                    <div class="">
+                                        <select class="w-full bg-gray-200 p-2 rounded-lg" name="state" onchange="load_jadwal_widget(this)" data-select2-id="1" tabindex="-1">
+                                            <option value="kab-aceh-barat">KAB. ACEH BARAT</option>
+                                            <option value="kab-aceh-barat-daya">KAB. ACEH BARAT DAYA</option>
+                                            <option value="kab-aceh-besar">KAB. ACEH BESAR</option>
+                                            <option value="kab-aceh-jaya">KAB. ACEH JAYA</option>
+                                            <option value="kab-aceh-selatan">KAB. ACEH SELATAN</option>
+                                            <option value="kab-aceh-singkil">KAB. ACEH SINGKIL</option>
+                                            <option value="kab-aceh-tamiang">KAB. ACEH TAMIANG</option>
+                                            <option value="kab-aceh-tengah">KAB. ACEH TENGAH</option>
+                                            <option value="kab-aceh-tenggara">KAB. ACEH TENGGARA</option>
+                                            <option value="kab-aceh-timur">KAB. ACEH TIMUR</option>
+                                            <option value="kab-aceh-utara">KAB. ACEH UTARA</option>
+                                            <option value="kab-administrasi-kepulauan-seribu">KAB. ADMINISTRASI KEPULAUAN SERIBU</option>
+                                            <option value="kab-agam">KAB. AGAM</option>
+                                            <option value="kab-alor">KAB. ALOR</option>
+                                            <option value="kab-asahan">KAB. ASAHAN</option>
+                                            <option value="kab-asmat">KAB. ASMAT</option>
+                                            <option value="kab-badung">KAB. BADUNG</option>
+                                            <option value="kab-balangan">KAB. BALANGAN</option>
+                                            <option value="kab-bandung">KAB. BANDUNG</option>
+                                            <option value="kab-bandung-barat">KAB. BANDUNG BARAT</option>
+                                            <option value="kab-banggai">KAB. BANGGAI</option>
+                                            <option value="kab-banggai-kepulauan">KAB. BANGGAI KEPULAUAN</option>
+                                            <option value="kab-banggai-laut">KAB. BANGGAI LAUT</option>
+                                            <option value="kab-bangka">KAB. BANGKA</option>
+                                            <option value="kab-bangka-barat">KAB. BANGKA BARAT</option>
+                                            <option value="kab-bangkalan">KAB. BANGKALAN</option>
+                                            <option value="kab-bangka-selatan">KAB. BANGKA SELATAN</option>
+                                            <option value="kab-bangka-tengah">KAB. BANGKA TENGAH</option>
+                                            <option value="kab-bangli">KAB. BANGLI</option>
+                                            <option value="kab-banjar">KAB. BANJAR</option>
+                                            <option value="kab-banjarnegara">KAB. BANJARNEGARA</option>
+                                            <option value="kab-bantaeng">KAB. BANTAENG</option>
+                                            <option value="kab-bantul">KAB. BANTUL</option>
+                                            <option value="kab-banyuasin">KAB. BANYUASIN</option>
+                                            <option value="kab-banyumas">KAB. BANYUMAS</option>
+                                            <option value="kab-banyuwangi">KAB. BANYUWANGI</option>
+                                            <option value="kab-barito-kuala">KAB. BARITO KUALA</option>
+                                            <option value="kab-barito-selatan">KAB. BARITO SELATAN</option>
+                                            <option value="kab-barito-timur">KAB. BARITO TIMUR</option>
+                                            <option value="kab-barito-utara">KAB. BARITO UTARA</option>
+                                            <option value="kab-barru">KAB. BARRU</option>
+                                            <option value="kab-batang">KAB. BATANG</option>
+                                            <option value="kab-batanghari">KAB. BATANGHARI</option>
+                                            <option value="kab-batu-bara">KAB. BATU BARA</option>
+                                            <option value="kab-bekasi">KAB. BEKASI</option>
+                                            <option value="kab-belitung">KAB. BELITUNG</option>
+                                            <option value="kab-belitung-timur">KAB. BELITUNG TIMUR</option>
+                                            <option value="kab-belu">KAB. BELU</option>
+                                            <option value="kab-bener-meriah">KAB. BENER MERIAH</option>
+                                            <option value="kab-bengkalis">KAB. BENGKALIS</option>
+                                            <option value="kab-bengkayang">KAB. BENGKAYANG</option>
+                                            <option value="kab-bengkulu-selatan">KAB. BENGKULU SELATAN</option>
+                                            <option value="kab-bengkulu-tengah">KAB. BENGKULU TENGAH</option>
+                                            <option value="kab-bengkulu-utara">KAB. BENGKULU UTARA</option>
+                                            <option value="kab-berau">KAB. BERAU</option>
+                                            <option value="kab-biak-numfor">KAB. BIAK NUMFOR</option>
+                                            <option value="kab-bima">KAB. BIMA</option>
+                                            <option value="kab-bintan">KAB. BINTAN</option>
+                                            <option value="kab-bireuen">KAB. BIREUEN</option>
+                                            <option value="kab-blitar">KAB. BLITAR</option>
+                                            <option value="kab-blora">KAB. BLORA</option>
+                                            <option value="kab-boalemo">KAB. BOALEMO</option>
+                                            <option value="kab-bogor">KAB. BOGOR</option>
+                                            <option value="kab-bojonegoro">KAB. BOJONEGORO</option>
+                                            <option value="kab-bolaang-mongondow">KAB. BOLAANG MONGONDOW</option>
+                                            <option value="kab-bolaang-mongondow-selatan">KAB. BOLAANG MONGONDOW SELATAN</option>
+                                            <option value="kab-bolaang-mongondow-timur">KAB. BOLAANG MONGONDOW TIMUR</option>
+                                            <option value="kab-bolaang-mongondow-utara">KAB. BOLAANG MONGONDOW UTARA</option>
+                                            <option value="kab-bombana">KAB. BOMBANA</option>
+                                            <option value="kab-bondowoso">KAB. BONDOWOSO</option>
+                                            <option value="kab-bone">KAB. BONE</option>
+                                            <option value="kab-bone-bolango">KAB. BONE BOLANGO</option>
+                                            <option value="kab-boven-digoel">KAB. BOVEN DIGOEL</option>
+                                            <option value="kab-boyolali">KAB. BOYOLALI</option>
+                                            <option value="kab-brebes">KAB. BREBES</option>
+                                            <option value="kab-buleleng">KAB. BULELENG</option>
+                                            <option value="kab-bulukumba">KAB. BULUKUMBA</option>
+                                            <option value="kab-bulungan">KAB. BULUNGAN</option>
+                                            <option value="kab-bungo">KAB. BUNGO</option>
+                                            <option value="kab-buol">KAB. BUOL</option>
+                                            <option value="kab-buru">KAB. BURU</option>
+                                            <option value="kab-buru-selatan">KAB. BURU SELATAN</option>
+                                            <option value="kab-buton">KAB. BUTON</option>
+                                            <option value="kab-buton-selatan">KAB. BUTON SELATAN</option>
+                                            <option value="kab-buton-tengah">KAB. BUTON TENGAH</option>
+                                            <option value="kab-buton-utara">KAB. BUTON UTARA</option>
+                                            <option value="kab-ciamis">KAB. CIAMIS</option>
+                                            <option value="kab-cianjur">KAB. CIANJUR</option>
+                                            <option value="kab-cilacap">KAB. CILACAP</option>
+                                            <option value="kab-cirebon">KAB. CIREBON</option>
+                                            <option value="kab-dairi">KAB. DAIRI</option>
+                                            <option value="kab-deiyai">KAB. DEIYAI</option>
+                                            <option value="kab-deli-serdang">KAB. DELI SERDANG</option>
+                                            <option value="kab-demak">KAB. DEMAK</option>
+                                            <option value="kab-dharmasraya">KAB. DHARMASRAYA</option>
+                                            <option value="kab-dogiyai">KAB. DOGIYAI</option>
+                                            <option value="kab-dompu">KAB. DOMPU</option>
+                                            <option value="kab-donggala">KAB. DONGGALA</option>
+                                            <option value="kab-empat-lawang">KAB. EMPAT LAWANG</option>
+                                            <option value="kab-ende">KAB. ENDE</option>
+                                            <option value="kab-enrekang">KAB. ENREKANG</option>
+                                            <option value="kab-fakfak">KAB. FAKFAK</option>
+                                            <option value="kab-flores-timur">KAB. FLORES TIMUR</option>
+                                            <option value="kab-garut">KAB. GARUT</option>
+                                            <option value="kab-gayo-lues">KAB. GAYO LUES</option>
+                                            <option value="kab-gianyar">KAB. GIANYAR</option>
+                                            <option value="kab-gorontalo">KAB. GORONTALO</option>
+                                            <option value="kab-gorontalo-utara">KAB. GORONTALO UTARA</option>
+                                            <option value="kab-gowa">KAB. GOWA</option>
+                                            <option value="kab-gresik">KAB. GRESIK</option>
+                                            <option value="kab-grobogan">KAB. GROBOGAN</option>
+                                            <option value="kab-gunungkidul">KAB. GUNUNGKIDUL</option>
+                                            <option value="kab-gunung-mas">KAB. GUNUNG MAS</option>
+                                            <option value="kab-halmahera-barat">KAB. HALMAHERA BARAT</option>
+                                            <option value="kab-halmahera-selatan">KAB. HALMAHERA SELATAN</option>
+                                            <option value="kab-halmahera-tengah">KAB. HALMAHERA TENGAH</option>
+                                            <option value="kab-halmahera-timur">KAB. HALMAHERA TIMUR</option>
+                                            <option value="kab-halmahera-utara">KAB. HALMAHERA UTARA</option>
+                                            <option value="kab-hulu-sungai-selatan">KAB. HULU SUNGAI SELATAN</option>
+                                            <option value="kab-hulu-sungai-tengah">KAB. HULU SUNGAI TENGAH</option>
+                                            <option value="kab-hulu-sungai-utara">KAB. HULU SUNGAI UTARA</option>
+                                            <option value="kab-humbang-hasundutan">KAB. HUMBANG HASUNDUTAN</option>
+                                            <option value="kab-indragiri-hilir">KAB. INDRAGIRI HILIR</option>
+                                            <option value="kab-indragiri-hulu">KAB. INDRAGIRI HULU</option>
+                                            <option value="kab-indramayu">KAB. INDRAMAYU</option>
+                                            <option value="kab-intan-jaya">KAB. INTAN JAYA</option>
+                                            <option value="kab-jayapura">KAB. JAYAPURA</option>
+                                            <option value="kab-jayawijaya">KAB. JAYAWIJAYA</option>
+                                            <option value="kab-jember">KAB. JEMBER</option>
+                                            <option value="kab-jembrana">KAB. JEMBRANA</option>
+                                            <option value="kab-jeneponto">KAB. JENEPONTO</option>
+                                            <option value="kab-jepara">KAB. JEPARA</option>
+                                            <option value="kab-jombang">KAB. JOMBANG</option>
+                                            <option value="kab-kaimana">KAB. KAIMANA</option>
+                                            <option value="kab-kampar">KAB. KAMPAR</option>
+                                            <option value="kab-kapuas">KAB. KAPUAS</option>
+                                            <option value="kab-kapuas-hulu">KAB. KAPUAS HULU</option>
+                                            <option value="kab-karanganyar">KAB. KARANGANYAR</option>
+                                            <option value="kab-karangasem">KAB. KARANGASEM</option>
+                                            <option value="kab-karawang">KAB. KARAWANG</option>
+                                            <option value="kab-karimun">KAB. KARIMUN</option>
+                                            <option value="kab-karo">KAB. KARO</option>
+                                            <option value="kab-katingan">KAB. KATINGAN</option>
+                                            <option value="kab-kaur">KAB. KAUR</option>
+                                            <option value="kab-kayong-utara">KAB. KAYONG UTARA</option>
+                                            <option value="kab-kebumen">KAB. KEBUMEN</option>
+                                            <option value="kab-kediri">KAB. KEDIRI</option>
+                                            <option value="kab-keerom">KAB. KEEROM</option>
+                                            <option value="kab-kendal">KAB. KENDAL</option>
+                                            <option value="kab-kepahiang">KAB. KEPAHIANG</option>
+                                            <option value="kab-kepulauan-anambas">KAB. KEPULAUAN ANAMBAS</option>
+                                            <option value="kab-kepulauan-aru">KAB. KEPULAUAN ARU</option>
+                                            <option value="kab-kepulauan-mentawai">KAB. KEPULAUAN MENTAWAI</option>
+                                            <option value="kab-kepulauan-meranti">KAB. KEPULAUAN MERANTI</option>
+                                            <option value="kab-kepulauan-sangihe">KAB. KEPULAUAN SANGIHE</option>
+                                            <option value="kab-kepulauan-selayar">KAB. KEPULAUAN SELAYAR</option>
+                                            <option value="kab-kepulauan-siau-tagulandang-biaro">KAB. KEPULAUAN SIAU TAGULANDANG BIARO</option>
+                                            <option value="kab-kepulauan-sula">KAB. KEPULAUAN SULA</option>
+                                            <option value="kab-kepulauan-talaud">KAB. KEPULAUAN TALAUD</option>
+                                            <option value="kab-kepulauan-yapen">KAB. KEPULAUAN YAPEN</option>
+                                            <option value="kab-kerinci">KAB. KERINCI</option>
+                                            <option value="kab-ketapang">KAB. KETAPANG</option>
+                                            <option value="kab-klaten">KAB. KLATEN</option>
+                                            <option value="kab-klungkung">KAB. KLUNGKUNG</option>
+                                            <option value="kab-kolaka">KAB. KOLAKA</option>
+                                            <option value="kab-kolaka-timur">KAB. KOLAKA TIMUR</option>
+                                            <option value="kab-kolaka-utara">KAB. KOLAKA UTARA</option>
+                                            <option value="kab-konawe">KAB. KONAWE</option>
+                                            <option value="kab-konawe-kepulauan">KAB. KONAWE KEPULAUAN</option>
+                                            <option value="kab-konawe-selatan">KAB. KONAWE SELATAN</option>
+                                            <option value="kab-konawe-utara">KAB. KONAWE UTARA</option>
+                                            <option value="kab-kotabaru">KAB. KOTABARU</option>
+                                            <option value="kab-kotawaringin-barat">KAB. KOTAWARINGIN BARAT</option>
+                                            <option value="kab-kotawaringin-timur">KAB. KOTAWARINGIN TIMUR</option>
+                                            <option value="kab-kuantan-singingi">KAB. KUANTAN SINGINGI</option>
+                                            <option value="kab-kubu-raya">KAB. KUBU RAYA</option>
+                                            <option value="kab-kudus">KAB. KUDUS</option>
+                                            <option value="kab-kulon-progo">KAB. KULON PROGO</option>
+                                            <option value="kab-kuningan">KAB. KUNINGAN</option>
+                                            <option value="kab-kupang">KAB. KUPANG</option>
+                                            <option value="kab-kutai-barat">KAB. KUTAI BARAT</option>
+                                            <option value="kab-kutai-kartanegara">KAB. KUTAI KARTANEGARA</option>
+                                            <option value="kab-kutai-timur">KAB. KUTAI TIMUR</option>
+                                            <option value="kab-labuhanbatu">KAB. LABUHANBATU</option>
+                                            <option value="kab-labuhanbatu-selatan">KAB. LABUHANBATU SELATAN</option>
+                                            <option value="kab-labuhanbatu-utara">KAB. LABUHANBATU UTARA</option>
+                                            <option value="kab-lahat">KAB. LAHAT</option>
+                                            <option value="kab-lamandau">KAB. LAMANDAU</option>
+                                            <option value="kab-lamongan">KAB. LAMONGAN</option>
+                                            <option value="kab-lampung-barat">KAB. LAMPUNG BARAT</option>
+                                            <option value="kab-lampung-selatan">KAB. LAMPUNG SELATAN</option>
+                                            <option value="kab-lampung-tengah">KAB. LAMPUNG TENGAH</option>
+                                            <option value="kab-lampung-timur">KAB. LAMPUNG TIMUR</option>
+                                            <option value="kab-lampung-utara">KAB. LAMPUNG UTARA</option>
+                                            <option value="kab-landak">KAB. LANDAK</option>
+                                            <option value="kab-langkat">KAB. LANGKAT</option>
+                                            <option value="kab-lanny-jaya">KAB. LANNY JAYA</option>
+                                            <option value="kab-lebak">KAB. LEBAK</option>
+                                            <option value="kab-lebong">KAB. LEBONG</option>
+                                            <option value="kab-lembata">KAB. LEMBATA</option>
+                                            <option value="kab-lima-puluh-kota">KAB. LIMA PULUH KOTA</option>
+                                            <option value="kab-lingga">KAB. LINGGA</option>
+                                            <option value="kab-lombok-barat">KAB. LOMBOK BARAT</option>
+                                            <option value="kab-lombok-tengah">KAB. LOMBOK TENGAH</option>
+                                            <option value="kab-lombok-timur">KAB. LOMBOK TIMUR</option>
+                                            <option value="kab-lombok-utara">KAB. LOMBOK UTARA</option>
+                                            <option value="kab-lumajang">KAB. LUMAJANG</option>
+                                            <option value="kab-luwu">KAB. LUWU</option>
+                                            <option value="kab-luwu-timur">KAB. LUWU TIMUR</option>
+                                            <option value="kab-luwu-utara">KAB. LUWU UTARA</option>
+                                            <option value="kab-madiun">KAB. MADIUN</option>
+                                            <option value="kab-magelang">KAB. MAGELANG</option>
+                                            <option value="kab-magetan">KAB. MAGETAN</option>
+                                            <option value="kab-mahakam-ulu">KAB. MAHAKAM ULU</option>
+                                            <option value="kab-majalengka">KAB. MAJALENGKA</option>
+                                            <option value="kab-majene">KAB. MAJENE</option>
+                                            <option value="kab-malaka">KAB. MALAKA</option>
+                                            <option value="kab-malang">KAB. MALANG</option>
+                                            <option value="kab-malinau">KAB. MALINAU</option>
+                                            <option value="kab-maluku-barat-daya">KAB. MALUKU BARAT DAYA</option>
+                                            <option value="kab-maluku-tengah">KAB. MALUKU TENGAH</option>
+                                            <option value="kab-maluku-tenggara">KAB. MALUKU TENGGARA</option>
+                                            <option value="kab-maluku-tenggara-barat">KAB. MALUKU TENGGARA BARAT</option>
+                                            <option value="kab-mamasa">KAB. MAMASA</option>
+                                            <option value="kab-mamberamo-raya">KAB. MAMBERAMO RAYA</option>
+                                            <option value="kab-mamberamo-tengah">KAB. MAMBERAMO TENGAH</option>
+                                            <option value="kab-mamuju">KAB. MAMUJU</option>
+                                            <option value="kab-mamuju-tengah">KAB. MAMUJU TENGAH</option>
+                                            <option value="kab-mamuju-utara">KAB. MAMUJU UTARA</option>
+                                            <option value="kab-mandailing-natal">KAB. MANDAILING NATAL</option>
+                                            <option value="kab-manggarai">KAB. MANGGARAI</option>
+                                            <option value="kab-manggarai-barat">KAB. MANGGARAI BARAT</option>
+                                            <option value="kab-manggarai-timur">KAB. MANGGARAI TIMUR</option>
+                                            <option value="kab-manokwari">KAB. MANOKWARI</option>
+                                            <option value="kab-manokwari-selatan">KAB. MANOKWARI SELATAN</option>
+                                            <option value="kab-mappi">KAB. MAPPI</option>
+                                            <option value="kab-maros">KAB. MAROS</option>
+                                            <option value="kab-maybrat">KAB. MAYBRAT</option>
+                                            <option value="kab-melawi">KAB. MELAWI</option>
+                                            <option value="kab-mempawah">KAB. MEMPAWAH</option>
+                                            <option value="kab-merangin">KAB. MERANGIN</option>
+                                            <option value="kab-merauke">KAB. MERAUKE</option>
+                                            <option value="kab-mesuji">KAB. MESUJI</option>
+                                            <option value="kab-mimika">KAB. MIMIKA</option>
+                                            <option value="kab-minahasa">KAB. MINAHASA</option>
+                                            <option value="kab-minahasa-selatan">KAB. MINAHASA SELATAN</option>
+                                            <option value="kab-minahasa-tenggara">KAB. MINAHASA TENGGARA</option>
+                                            <option value="kab-minahasa-utara">KAB. MINAHASA UTARA</option>
+                                            <option value="kab-mojokerto">KAB. MOJOKERTO</option>
+                                            <option value="kab-morowali">KAB. MOROWALI</option>
+                                            <option value="kab-morowali-utara">KAB. MOROWALI UTARA</option>
+                                            <option value="kab-muara-enim">KAB. MUARA ENIM</option>
+                                            <option value="kab-muaro-jambi">KAB. MUARO JAMBI</option>
+                                            <option value="kab-mukomuko">KAB. MUKOMUKO</option>
+                                            <option value="kab-muna">KAB. MUNA</option>
+                                            <option value="kab-muna-barat">KAB. MUNA BARAT</option>
+                                            <option value="kab-murung-raya">KAB. MURUNG RAYA</option>
+                                            <option value="kab-musi-banyuasin">KAB. MUSI BANYUASIN</option>
+                                            <option value="kab-musi-rawas">KAB. MUSI RAWAS</option>
+                                            <option value="kab-musi-rawas-utara">KAB. MUSI RAWAS UTARA</option>
+                                            <option value="kab-nabire">KAB. NABIRE</option>
+                                            <option value="kab-nagan-raya">KAB. NAGAN RAYA</option>
+                                            <option value="kab-nagekeo">KAB. NAGEKEO</option>
+                                            <option value="kab-natuna">KAB. NATUNA</option>
+                                            <option value="kab-nduga">KAB. NDUGA</option>
+                                            <option value="kab-ngada">KAB. NGADA</option>
+                                            <option value="kab-nganjuk">KAB. NGANJUK</option>
+                                            <option value="kab-ngawi">KAB. NGAWI</option>
+                                            <option value="kab-nias">KAB. NIAS</option>
+                                            <option value="kab-nias-barat">KAB. NIAS BARAT</option>
+                                            <option value="kab-nias-selatan">KAB. NIAS SELATAN</option>
+                                            <option value="kab-nias-utara">KAB. NIAS UTARA</option>
+                                            <option value="kab-nunukan">KAB. NUNUKAN</option>
+                                            <option value="kab-ogan-ilir">KAB. OGAN ILIR</option>
+                                            <option value="kab-ogan-komering-ilir">KAB. OGAN KOMERING ILIR</option>
+                                            <option value="kab-ogan-komering-ulu">KAB. OGAN KOMERING ULU</option>
+                                            <option value="kab-ogan-komering-ulu-selatan">KAB. OGAN KOMERING ULU SELATAN</option>
+                                            <option value="kab-ogan-komering-ulu-timur">KAB. OGAN KOMERING ULU TIMUR</option>
+                                            <option value="kab-pacitan">KAB. PACITAN</option>
+                                            <option value="kab-padang-lawas">KAB. PADANG LAWAS</option>
+                                            <option value="kab-padang-lawas-utara">KAB. PADANG LAWAS UTARA</option>
+                                            <option value="kab-padang-pariaman">KAB. PADANG PARIAMAN</option>
+                                            <option value="kab-pahuwato">KAB. PAHUWATO</option>
+                                            <option value="kab-pakpak-bharat">KAB. PAKPAK BHARAT</option>
+                                            <option value="kab-pamekasan">KAB. PAMEKASAN</option>
+                                            <option value="kab-pandeglang">KAB. PANDEGLANG</option>
+                                            <option value="kab-pangandaran">KAB. PANGANDARAN</option>
+                                            <option value="kab-pangkajene-dan-kepulauan">KAB. PANGKAJENE DAN KEPULAUAN</option>
+                                            <option value="kab-paniai">KAB. PANIAI</option>
+                                            <option value="kab-parigi-moutong">KAB. PARIGI MOUTONG</option>
+                                            <option value="kab-pasaman">KAB. PASAMAN</option>
+                                            <option value="kab-pasaman-barat">KAB. PASAMAN BARAT</option>
+                                            <option value="kab-paser">KAB. PASER</option>
+                                            <option value="kab-pasuruan">KAB. PASURUAN</option>
+                                            <option value="kab-pati">KAB. PATI</option>
+                                            <option value="kab-pegunungan-arfak">KAB. PEGUNUNGAN ARFAK</option>
+                                            <option value="kab-pegunungan-bintang">KAB. PEGUNUNGAN BINTANG</option>
+                                            <option value="kab-pekalongan">KAB. PEKALONGAN</option>
+                                            <option value="kab-pelalawan">KAB. PELALAWAN</option>
+                                            <option value="kab-pemalang">KAB. PEMALANG</option>
+                                            <option value="kab-penajam-paser-utara">KAB. PENAJAM PASER UTARA</option>
+                                            <option value="kab-penukal-abab-lematang-ilir">KAB. PENUKAL ABAB LEMATANG ILIR</option>
+                                            <option value="kab-pesawaran">KAB. PESAWARAN</option>
+                                            <option value="kab-pesisir-barat">KAB. PESISIR BARAT</option>
+                                            <option value="kab-pesisir-selatan">KAB. PESISIR SELATAN</option>
+                                            <option value="kab-pidie">KAB. PIDIE</option>
+                                            <option value="kab-pidie-jaya">KAB. PIDIE JAYA</option>
+                                            <option value="kab-pinrang">KAB. PINRANG</option>
+                                            <option value="kab-polewali-mandar">KAB. POLEWALI MANDAR</option>
+                                            <option value="kab-ponorogo">KAB. PONOROGO</option>
+                                            <option value="kab-poso">KAB. POSO</option>
+                                            <option value="kab-pringsewu">KAB. PRINGSEWU</option>
+                                            <option value="kab-probolinggo">KAB. PROBOLINGGO</option>
+                                            <option value="kab-pulang-pisau">KAB. PULANG PISAU</option>
+                                            <option value="kab-pulau-morotai">KAB. PULAU MOROTAI</option>
+                                            <option value="kab-pulau-taliabu">KAB. PULAU TALIABU</option>
+                                            <option value="kab-puncak">KAB. PUNCAK</option>
+                                            <option value="kab-puncak-jaya">KAB. PUNCAK JAYA</option>
+                                            <option value="kab-purbalingga">KAB. PURBALINGGA</option>
+                                            <option value="kab-purwakarta">KAB. PURWAKARTA</option>
+                                            <option value="kab-purworejo">KAB. PURWOREJO</option>
+                                            <option value="kab-raja-ampat">KAB. RAJA AMPAT</option>
+                                            <option value="kab-rejang-lebong">KAB. REJANG LEBONG</option>
+                                            <option value="kab-rembang">KAB. REMBANG</option>
+                                            <option value="kab-rokan-hilir">KAB. ROKAN HILIR</option>
+                                            <option value="kab-rokan-hulu">KAB. ROKAN HULU</option>
+                                            <option value="kab-rote-ndao">KAB. ROTE NDAO</option>
+                                            <option value="kab-sabu-raijua">KAB. SABU RAIJUA</option>
+                                            <option value="kab-sambas">KAB. SAMBAS</option>
+                                            <option value="kab-samosir">KAB. SAMOSIR</option>
+                                            <option value="kab-sampang">KAB. SAMPANG</option>
+                                            <option value="kab-sanggau">KAB. SANGGAU</option>
+                                            <option value="kab-sarmi">KAB. SARMI</option>
+                                            <option value="kab-sarolangun">KAB. SAROLANGUN</option>
+                                            <option value="kab-sekadau">KAB. SEKADAU</option>
+                                            <option value="kab-seluma">KAB. SELUMA</option>
+                                            <option value="kab-semarang">KAB. SEMARANG</option>
+                                            <option value="kab-seram-bagian-barat">KAB. SERAM BAGIAN BARAT</option>
+                                            <option value="kab-seram-bagian-timur">KAB. SERAM BAGIAN TIMUR</option>
+                                            <option value="kab-serang">KAB. SERANG</option>
+                                            <option value="kab-serdang-bedagai">KAB. SERDANG BEDAGAI</option>
+                                            <option value="kab-seruyan">KAB. SERUYAN</option>
+                                            <option value="kab-siak">KAB. SIAK</option>
+                                            <option value="kab-sidenreng-rappang">KAB. SIDENRENG RAPPANG</option>
+                                            <option value="kab-sidoarjo">KAB. SIDOARJO</option>
+                                            <option value="kab-sigi">KAB. SIGI</option>
+                                            <option value="kab-sijunjung">KAB. SIJUNJUNG</option>
+                                            <option value="kab-sikka">KAB. SIKKA</option>
+                                            <option value="kab-simalungun">KAB. SIMALUNGUN</option>
+                                            <option value="kab-simeulue">KAB. SIMEULUE</option>
+                                            <option value="kab-sinjai">KAB. SINJAI</option>
+                                            <option value="kab-sintang">KAB. SINTANG</option>
+                                            <option value="kab-situbondo">KAB. SITUBONDO</option>
+                                            <option value="kab-sleman">KAB. SLEMAN</option>
+                                            <option value="kab-solok">KAB. SOLOK</option>
+                                            <option value="kab-solok-selatan">KAB. SOLOK SELATAN</option>
+                                            <option value="kab-soppeng">KAB. SOPPENG</option>
+                                            <option value="kab-sorong">KAB. SORONG</option>
+                                            <option value="kab-sorong-selatan">KAB. SORONG SELATAN</option>
+                                            <option value="kab-sragen">KAB. SRAGEN</option>
+                                            <option value="kab-subang">KAB. SUBANG</option>
+                                            <option value="kab-sukabumi">KAB. SUKABUMI</option>
+                                            <option value="kab-sukamara">KAB. SUKAMARA</option>
+                                            <option value="kab-sukoharjo">KAB. SUKOHARJO</option>
+                                            <option value="kab-sumba-barat">KAB. SUMBA BARAT</option>
+                                            <option value="kab-sumba-barat-daya">KAB. SUMBA BARAT DAYA</option>
+                                            <option value="kab-sumba-tengah">KAB. SUMBA TENGAH</option>
+                                            <option value="kab-sumba-timur">KAB. SUMBA TIMUR</option>
+                                            <option value="kab-sumbawa">KAB. SUMBAWA</option>
+                                            <option value="kab-sumbawa-barat">KAB. SUMBAWA BARAT</option>
+                                            <option value="kab-sumedang">KAB. SUMEDANG</option>
+                                            <option value="kab-sumenep">KAB. SUMENEP</option>
+                                            <option value="kab-supiori">KAB. SUPIORI</option>
+                                            <option value="kab-tabalong">KAB. TABALONG</option>
+                                            <option value="kab-tabanan">KAB. TABANAN</option>
+                                            <option value="kab-takalar">KAB. TAKALAR</option>
+                                            <option value="kab-tambrauw">KAB. TAMBRAUW</option>
+                                            <option value="kab-tanah-bumbu">KAB. TANAH BUMBU</option>
+                                            <option value="kab-tanah-datar">KAB. TANAH DATAR</option>
+                                            <option value="kab-tanah-laut">KAB. TANAH LAUT</option>
+                                            <option value="kab-tana-tidung">KAB. TANA TIDUNG</option>
+                                            <option value="kab-tana-toraja">KAB. TANA TORAJA</option>
+                                            <option value="kab-tangerang">KAB. TANGERANG</option>
+                                            <option value="kab-tanggamus">KAB. TANGGAMUS</option>
+                                            <option value="kab-tanjung-jabung-barat">KAB. TANJUNG JABUNG BARAT</option>
+                                            <option value="kab-tanjung-jabung-timur">KAB. TANJUNG JABUNG TIMUR</option>
+                                            <option value="kab-tapanuli-selatan">KAB. TAPANULI SELATAN</option>
+                                            <option value="kab-tapanuli-tengah">KAB. TAPANULI TENGAH</option>
+                                            <option value="kab-tapanuli-utara">KAB. TAPANULI UTARA</option>
+                                            <option value="kab-tapin">KAB. TAPIN</option>
+                                            <option value="kab-tasikmalaya">KAB. TASIKMALAYA</option>
+                                            <option value="kab-tebo">KAB. TEBO</option>
+                                            <option value="kab-tegal">KAB. TEGAL</option>
+                                            <option value="kab-teluk-bintuni">KAB. TELUK BINTUNI</option>
+                                            <option value="kab-teluk-wondama">KAB. TELUK WONDAMA</option>
+                                            <option value="kab-temanggung">KAB. TEMANGGUNG</option>
+                                            <option value="kab-timor-tengah-selatan">KAB. TIMOR TENGAH SELATAN</option>
+                                            <option value="kab-timor-tengah-utara">KAB. TIMOR TENGAH UTARA</option>
+                                            <option value="kab-toba-samosir">KAB. TOBA SAMOSIR</option>
+                                            <option value="kab-tojo-una-una">KAB. TOJO UNA-UNA</option>
+                                            <option value="kab-tolikara">KAB. TOLIKARA</option>
+                                            <option value="kab-toli-toli">KAB. TOLI-TOLI</option>
+                                            <option value="kab-toraja-utara">KAB. TORAJA UTARA</option>
+                                            <option value="kab-trenggalek">KAB. TRENGGALEK</option>
+                                            <option value="kab-tuban">KAB. TUBAN</option>
+                                            <option value="kab-tulang-bawang">KAB. TULANG BAWANG</option>
+                                            <option value="kab-tulang-bawang-barat">KAB. TULANG BAWANG BARAT</option>
+                                            <option value="kab-tulungagung">KAB. TULUNGAGUNG</option>
+                                            <option value="kab-wajo">KAB. WAJO</option>
+                                            <option value="kab-wakatobi">KAB. WAKATOBI</option>
+                                            <option value="kab-waropen">KAB. WAROPEN</option>
+                                            <option value="kab-way-kanan">KAB. WAY KANAN</option>
+                                            <option value="kab-wonogiri">KAB. WONOGIRI</option>
+                                            <option value="kab-wonosobo">KAB. WONOSOBO</option>
+                                            <option value="kab-yahukimo">KAB. YAHUKIMO</option>
+                                            <option value="kab-yalimo">KAB. YALIMO</option>
+                                            <option value="kab-yapen-waropen">KAB. YAPEN WAROPEN</option>
+                                            <option value="kota-ambon">KOTA AMBON</option>
+                                            <option value="kota-balikpapan">KOTA BALIKPAPAN</option>
+                                            <option value="kota-banda-aceh">KOTA BANDA ACEH</option>
+                                            <option value="kota-bandar-lampung">KOTA BANDAR LAMPUNG</option>
+                                            <option value="kota-bandung">KOTA BANDUNG</option>
+                                            <option value="kota-banjar">KOTA BANJAR</option>
+                                            <option value="kota-banjarbaru">KOTA BANJARBARU</option>
+                                            <option value="kota-banjarmasin">KOTA BANJARMASIN</option>
+                                            <option value="kota-batam">KOTA BATAM</option>
+                                            <option value="kota-batu">KOTA BATU</option>
+                                            <option value="kota-bau-bau">KOTA BAU-BAU</option>
+                                            <option value="kota-bekasi">KOTA BEKASI</option>
+                                            <option value="kota-bengkulu">KOTA BENGKULU</option>
+                                            <option value="kota-bima">KOTA BIMA</option>
+                                            <option value="kota-binjai">KOTA BINJAI</option>
+                                            <option value="kota-bitung">KOTA BITUNG</option>
+                                            <option value="kota-blitar">KOTA BLITAR</option>
+                                            <option value="kota-bogor">KOTA BOGOR</option>
+                                            <option value="kota-bontang">KOTA BONTANG</option>
+                                            <option value="kota-bukittinggi">KOTA BUKITTINGGI</option>
+                                            <option value="kota-cilegon">KOTA CILEGON</option>
+                                            <option value="kota-cimahi">KOTA CIMAHI</option>
+                                            <option value="kota-cirebon">KOTA CIREBON</option>
+                                            <option value="kota-denpasar">KOTA DENPASAR</option>
+                                            <option value="kota-depok">KOTA DEPOK</option>
+                                            <option value="kota-dumai">KOTA DUMAI</option>
+                                            <option value="kota-gorontalo">KOTA GORONTALO</option>
+                                            <option value="kota-gunungsitoli">KOTA GUNUNGSITOLI</option>
+                                            <option value="kota-jakarta" selected="" data-select2-id="3">KOTA JAKARTA</option>
+                                            <option value="kota-jambi">KOTA JAMBI</option>
+                                            <option value="kota-jayapura">KOTA JAYAPURA</option>
+                                            <option value="kota-kediri">KOTA KEDIRI</option>
+                                            <option value="kota-kendari">KOTA KENDARI</option>
+                                            <option value="kota-kotamobagu">KOTA KOTAMOBAGU</option>
+                                            <option value="kota-kupang">KOTA KUPANG</option>
+                                            <option value="kota-langsa">KOTA LANGSA</option>
+                                            <option value="kota-lhokseumawe">KOTA LHOKSEUMAWE</option>
+                                            <option value="kota-lubuklinggau">KOTA LUBUKLINGGAU</option>
+                                            <option value="kota-madiun">KOTA MADIUN</option>
+                                            <option value="kota-magelang">KOTA MAGELANG</option>
+                                            <option value="kota-makassar">KOTA MAKASSAR</option>
+                                            <option value="kota-malang">KOTA MALANG</option>
+                                            <option value="kota-manado">KOTA MANADO</option>
+                                            <option value="kota-mataram">KOTA MATARAM</option>
+                                            <option value="kota-medan">KOTA MEDAN</option>
+                                            <option value="kota-metro">KOTA METRO</option>
+                                            <option value="kota-mojokerto">KOTA MOJOKERTO</option>
+                                            <option value="kota-padang">KOTA PADANG</option>
+                                            <option value="kota-padangpanjang">KOTA PADANGPANJANG</option>
+                                            <option value="kota-padangsidempuan">KOTA PADANGSIDEMPUAN</option>
+                                            <option value="kota-pagar-alam">KOTA PAGAR ALAM</option>
+                                            <option value="kota-palangkaraya">KOTA PALANGKARAYA</option>
+                                            <option value="kota-palembang">KOTA PALEMBANG</option>
+                                            <option value="kota-palopo">KOTA PALOPO</option>
+                                            <option value="kota-palu">KOTA PALU</option>
+                                            <option value="kota-pangkal-pinang">KOTA PANGKAL PINANG</option>
+                                            <option value="kota-parepare">KOTA PAREPARE</option>
+                                            <option value="kota-pariaman">KOTA PARIAMAN</option>
+                                            <option value="kota-pasuruan">KOTA PASURUAN</option>
+                                            <option value="kota-payakumbuh">KOTA PAYAKUMBUH</option>
+                                            <option value="kota-pekalongan">KOTA PEKALONGAN</option>
+                                            <option value="kota-pekanbaru">KOTA PEKANBARU</option>
+                                            <option value="kota-pematangsiantar">KOTA PEMATANGSIANTAR</option>
+                                            <option value="kota-pontianak">KOTA PONTIANAK</option>
+                                            <option value="kota-prabumulih">KOTA PRABUMULIH</option>
+                                            <option value="kota-probolinggo">KOTA PROBOLINGGO</option>
+                                            <option value="kota-sabang">KOTA SABANG</option>
+                                            <option value="kota-salatiga">KOTA SALATIGA</option>
+                                            <option value="kota-samarinda">KOTA SAMARINDA</option>
+                                            <option value="kota-sawahlunto">KOTA SAWAHLUNTO</option>
+                                            <option value="kota-semarang">KOTA SEMARANG</option>
+                                            <option value="kota-serang">KOTA SERANG</option>
+                                            <option value="kota-sibolga">KOTA SIBOLGA</option>
+                                            <option value="kota-singkawang">KOTA SINGKAWANG</option>
+                                            <option value="kota-sofifi">KOTA SOFIFI</option>
+                                            <option value="kota-solok">KOTA SOLOK</option>
+                                            <option value="kota-sorong">KOTA SORONG</option>
+                                            <option value="kota-subulussalam">KOTA SUBULUSSALAM</option>
+                                            <option value="kota-sukabumi">KOTA SUKABUMI</option>
+                                            <option value="kota-sungai-penuh">KOTA SUNGAI PENUH</option>
+                                            <option value="kota-surabaya">KOTA SURABAYA</option>
+                                            <option value="kota-surakarta">KOTA SURAKARTA</option>
+                                            <option value="kota-tangerang">KOTA TANGERANG</option>
+                                            <option value="kota-tangerang-selatan">KOTA TANGERANG SELATAN</option>
+                                            <option value="kota-tanjungbalai">KOTA TANJUNGBALAI</option>
+                                            <option value="kota-tanjung-pinang">KOTA TANJUNG PINANG</option>
+                                            <option value="kota-tarakan">KOTA TARAKAN</option>
+                                            <option value="kota-tasikmalaya">KOTA TASIKMALAYA</option>
+                                            <option value="kota-tebing-tinggi">KOTA TEBING TINGGI</option>
+                                            <option value="kota-tegal">KOTA TEGAL</option>
+                                            <option value="kota-ternate">KOTA TERNATE</option>
+                                            <option value="kota-tidore-kepulauan">KOTA TIDORE KEPULAUAN</option>
+                                            <option value="kota-tomohon">KOTA TOMOHON</option>
+                                            <option value="kota-tual">KOTA TUAL</option>
+                                            <option value="kota-yogyakarta">KOTA YOGYAKARTA</option>
+                                            <option value="pekajang-kab-lingga">PEKAJANG KAB. LINGGA</option>
+                                            <option value="pulau-laut-kab-natuna">PULAU LAUT KAB. NATUNA</option>
+                                            <option value="pulau-midai-kab-natuna">PULAU MIDAI KAB. NATUNA</option>
+                                            <option value="pulau-serasan-kab-natuna">PULAU SERASAN KAB. NATUNA</option>
+                                            <option value="pulau-tambelan-kab-bintan">PULAU TAMBELAN KAB. BINTAN</option>
+                                        </select>
+                                        <span class="" data-select2-id="2" style="width: 100%">
+                                            <span class="selection">
+                                                <span class="" role="combobox">
+                                                    <span class="hidden" id="" role="textbox" aria-readonly="true" title="KOTA JAKARTA">KOTA JAKARTA</span>
+                                                    <span class="" role="presentation">
+                                                        <b role="presentation"></b>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class=""> </span>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="">
+                                <a href="download-jadwalimsak.html" target="_blank" class="jadwalimsak-download bg-jb-red px-4 py-2 flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-jb-lightblue pt-10 px-2.5 pb-2.5 mt-8 bg-no-repeat jadwalimsak-wrap">
+                            <div class="w-3/5 max-w-[250px] mx-auto mb-2">
+                                <img src="images/logo-jernihberbagi.svg" width="250" height="92" alt="ramadhan 2022 logo" />
+                            </div>
+
+                            <div class="text-lg font-changa text-jb-blue text-center mb-4 md:text-xl">
+                                <h3>
+                                    Jadwal Imsak, Buka Puasa, dan Waktu Shalat<br />
+                                    di KOTA JAKARTA Ramadhan 2023
+                                </h3>
+                            </div>
+
+                            <div id="" class="relative w-[calc(100%_+_20px)] px-2.5 -mx-2.5 overflow-x-auto scrollbar text-sm lg:text-base lg:w-full lg:mx-auto lg:p-0 text-center">
+                                <table class="w-full">
+                                    <thead class="">
+                                        <tr class="bg-jb-blue text-white">
+                                            <th class="p-2 uppercase">Hari</th>
+                                            <th class="p-2 uppercase">Tgl</th>
+                                            <th class="p-2 uppercase">Imsak</th>
+                                            <th class="p-2 uppercase">Subuh</th>
+                                            <th class="p-2 uppercase">Terbit</th>
+                                            <th class="p-2 uppercase">Dzuhur</th>
+                                            <th class="p-2 uppercase">Ashar</th>
+                                            <th class="p-2 uppercase">Magrib</th>
+                                            <th class="p-2 uppercase">Isya</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">Minggu, 03/04</td>
+                                            <td class="p-2">04:30</td>
+                                            <td class="p-2">04:40</td>
+                                            <td class="p-2">05:52</td>
+                                            <td class="p-2">12:00</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">18:00</td>
+                                            <td class="p-2">19:09</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">2</td>
+                                            <td class="p-2">Senin, 04/04</td>
+                                            <td class="p-2">04:30</td>
+                                            <td class="p-2">04:40</td>
+                                            <td class="p-2">05:52</td>
+                                            <td class="p-2">11:59</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">18:00</td>
+                                            <td class="p-2">19:08</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">3</td>
+                                            <td class="p-2">Selasa, 05/04</td>
+                                            <td class="p-2">04:30</td>
+                                            <td class="p-2">04:40</td>
+                                            <td class="p-2">05:52</td>
+                                            <td class="p-2">11:59</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:59</td>
+                                            <td class="p-2">19:08</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">4</td>
+                                            <td class="p-2">Rabu, 06/04</td>
+                                            <td class="p-2">04:30</td>
+                                            <td class="p-2">04:40</td>
+                                            <td class="p-2">05:51</td>
+                                            <td class="p-2">11:59</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:59</td>
+                                            <td class="p-2">19:08</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">5</td>
+                                            <td class="p-2">Kamis, 07/04</td>
+                                            <td class="p-2">04:30</td>
+                                            <td class="p-2">04:40</td>
+                                            <td class="p-2">05:51</td>
+                                            <td class="p-2">11:58</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:58</td>
+                                            <td class="p-2">19:07</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">6</td>
+                                            <td class="p-2">Jumat, 08/04</td>
+                                            <td class="p-2">04:29</td>
+                                            <td class="p-2">04:39</td>
+                                            <td class="p-2">05:51</td>
+                                            <td class="p-2">11:58</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:58</td>
+                                            <td class="p-2">19:07</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">7</td>
+                                            <td class="p-2">Sabtu, 09/04</td>
+                                            <td class="p-2">04:29</td>
+                                            <td class="p-2">04:39</td>
+                                            <td class="p-2">05:51</td>
+                                            <td class="p-2">11:58</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:58</td>
+                                            <td class="p-2">19:06</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">8</td>
+                                            <td class="p-2">Minggu, 10/04</td>
+                                            <td class="p-2">04:29</td>
+                                            <td class="p-2">04:39</td>
+                                            <td class="p-2">05:51</td>
+                                            <td class="p-2">11:58</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:57</td>
+                                            <td class="p-2">19:06</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">9</td>
+                                            <td class="p-2">Senin, 11/04</td>
+                                            <td class="p-2">04:29</td>
+                                            <td class="p-2">04:39</td>
+                                            <td class="p-2">05:51</td>
+                                            <td class="p-2">11:57</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:57</td>
+                                            <td class="p-2">19:06</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">10</td>
+                                            <td class="p-2">Selasa, 12/04</td>
+                                            <td class="p-2">04:29</td>
+                                            <td class="p-2">04:39</td>
+                                            <td class="p-2">05:51</td>
+                                            <td class="p-2">11:57</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:56</td>
+                                            <td class="p-2">19:05</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">11</td>
+                                            <td class="p-2">Rabu, 13/04</td>
+                                            <td class="p-2">04:28</td>
+                                            <td class="p-2">04:38</td>
+                                            <td class="p-2">05:51</td>
+                                            <td class="p-2">11:57</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:56</td>
+                                            <td class="p-2">19:05</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">12</td>
+                                            <td class="p-2">Kamis, 14/04</td>
+                                            <td class="p-2">04:28</td>
+                                            <td class="p-2">04:38</td>
+                                            <td class="p-2">05:51</td>
+                                            <td class="p-2">11:57</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:55</td>
+                                            <td class="p-2">19:05</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">13</td>
+                                            <td class="p-2">Jumat, 15/04</td>
+                                            <td class="p-2">04:28</td>
+                                            <td class="p-2">04:38</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:56</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:55</td>
+                                            <td class="p-2">19:04</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">14</td>
+                                            <td class="p-2">Sabtu, 16/04</td>
+                                            <td class="p-2">04:28</td>
+                                            <td class="p-2">04:38</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:56</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:55</td>
+                                            <td class="p-2">19:04</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">15</td>
+                                            <td class="p-2">Minggu, 17/04</td>
+                                            <td class="p-2">04:28</td>
+                                            <td class="p-2">04:38</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:56</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:54</td>
+                                            <td class="p-2">19:04</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">16</td>
+                                            <td class="p-2">Senin, 18/04</td>
+                                            <td class="p-2">04:28</td>
+                                            <td class="p-2">04:38</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:56</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:54</td>
+                                            <td class="p-2">19:03</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">17</td>
+                                            <td class="p-2">Selasa, 19/04</td>
+                                            <td class="p-2">04:28</td>
+                                            <td class="p-2">04:38</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:55</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:53</td>
+                                            <td class="p-2">19:03</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">18</td>
+                                            <td class="p-2">Rabu, 20/04</td>
+                                            <td class="p-2">04:27</td>
+                                            <td class="p-2">04:37</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:55</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:53</td>
+                                            <td class="p-2">19:03</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">19</td>
+                                            <td class="p-2">Kamis, 21/04</td>
+                                            <td class="p-2">04:27</td>
+                                            <td class="p-2">04:37</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:55</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:53</td>
+                                            <td class="p-2">19:02</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">20</td>
+                                            <td class="p-2">Jumat, 22/04</td>
+                                            <td class="p-2">04:27</td>
+                                            <td class="p-2">04:37</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:55</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:52</td>
+                                            <td class="p-2">19:02</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">21</td>
+                                            <td class="p-2">Sabtu, 23/04</td>
+                                            <td class="p-2">04:27</td>
+                                            <td class="p-2">04:37</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:55</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:52</td>
+                                            <td class="p-2">19:02</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">22</td>
+                                            <td class="p-2">Minggu, 24/04</td>
+                                            <td class="p-2">04:27</td>
+                                            <td class="p-2">04:37</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:54</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:52</td>
+                                            <td class="p-2">19:02</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">23</td>
+                                            <td class="p-2">Senin, 25/04</td>
+                                            <td class="p-2">04:27</td>
+                                            <td class="p-2">04:37</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:54</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:51</td>
+                                            <td class="p-2">19:01</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">24</td>
+                                            <td class="p-2">Selasa, 26/04</td>
+                                            <td class="p-2">04:27</td>
+                                            <td class="p-2">04:37</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:54</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:51</td>
+                                            <td class="p-2">19:01</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">25</td>
+                                            <td class="p-2">Rabu, 27/04</td>
+                                            <td class="p-2">04:26</td>
+                                            <td class="p-2">04:36</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:54</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:51</td>
+                                            <td class="p-2">19:01</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">26</td>
+                                            <td class="p-2">Kamis, 28/04</td>
+                                            <td class="p-2">04:26</td>
+                                            <td class="p-2">04:36</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:54</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:51</td>
+                                            <td class="p-2">19:01</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">27</td>
+                                            <td class="p-2">Jumat, 29/04</td>
+                                            <td class="p-2">04:26</td>
+                                            <td class="p-2">04:36</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:54</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:50</td>
+                                            <td class="p-2">19:01</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">28</td>
+                                            <td class="p-2">Sabtu, 30/04</td>
+                                            <td class="p-2">04:26</td>
+                                            <td class="p-2">04:36</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:53</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:50</td>
+                                            <td class="p-2">19:01</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">29</td>
+                                            <td class="p-2">Minggu, 01/05</td>
+                                            <td class="p-2">04:26</td>
+                                            <td class="p-2">04:36</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:53</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:50</td>
+                                            <td class="p-2">19:00</td>
+                                        </tr>
+                                        <tr class="odd:bg-jb-babyblue even:bg-white border-y-2 border-y-jb-lightblue">
+                                            <td class="p-2">30</td>
+                                            <td class="p-2">Senin, 02/05</td>
+                                            <td class="p-2">04:26</td>
+                                            <td class="p-2">04:36</td>
+                                            <td class="p-2">05:50</td>
+                                            <td class="p-2">11:53</td>
+                                            <td class="p-2">15:14</td>
+                                            <td class="p-2">17:50</td>
+                                            <td class="p-2">19:00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="text-sm text-jb-blue mt-2 lg:text-base">Sumber: Bimas Islam Kementerian Agama</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-jb-blue">
+            <div class="container text-center px-5 py-8">
+                <div class="w-32 mx-auto">
+                    <img src="images/logo-jernihberbagi-white.svg" alt="" />
+                </div>
+                <p class="text-xs text-jb-red mt-2">&#169; 2022 Kompascom. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- [modal identitas] -->
+    <div class="modal modal__dark micromodal-slide" id="modal-identitas" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container modal__container__fix modal__border" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <div class="text-jb-navy font-bold mt-4 mb-2 text-center">Lengkapi identitasmu untuk menukarkan poin</div>
+                    <form action="index-verif-success.html">
+                        <input type="text" name="nama" id="" placeholder="Nama" class="border border-jb-navy my-2 py-1 px-3 w-full rounded-3xl">
+                        <input type="text" name="telepon" id="" placeholder="Nomor Telepon" class="border border-jb-navy my-2 py-1 px-3 w-full rounded-3xl">
+                        <label for="uploadktp" class="text-jb-navy text-left block font-bold mb-1">Foto KTP</label>
+                        <input type="file" name="" id="uploadktp" class="text-sm w-full">
+                        <input type="submit" value="Submit" class="text-white font-bold bg-jb-red py-1 px-8 rounded-full block mx-auto mt-4 modal__closetrigger">
+                    </form>
+                </main>
+                <footer class="modal__footer"></footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/micromodal.min.js"></script>
+    <script src="js/jernihberbagi.js"></script>
+</body>
+
+</html>

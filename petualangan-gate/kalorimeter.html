@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ramadan Jernih Berbagi - Kompas.com</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="apple-touch-icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+    <link rel="shortcut icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+
+    <!-- css kalorimeter -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/kalorimeter.css" />
+</head>
+
+<body>
+    <div class="wrap min-h-screen flex flex-col">
+        <header class="fixed w-full bg-jb-lightgreen bg-no-repeat bg-right-top bg-contain z-10 bg-header transition-all lg:rounded-none">
+            <div class="header-container container px-5 py-3 relative h-[52px] flex items-center justify-between lg:h-auto lg:flex-col">
+                <div class="header-logo w-16 transition-all overflow-hidden lg:max-h-14 lg:mx-auto lg:w-32">
+                    <a href="index.html">
+                        <img src="images/logo-jernihberbagi.svg" alt="" />
+                    </a>
+                </div>
+                <div class="header-mobile w-10 lg:hidden">
+                    <img src="images/menu.svg" alt="" />
+                </div>
+                <div class="menu-mobile absolute top-[52px] w-full left-0 bg-jb-blue text-white p-2 overflow-x-scroll flex gap-4 scrollbar-none lg:hidden">
+                    <a href="index.html#pengetahuan" class="shrink-0 text-xs font-bold">Jernih Berbagi Pengetahuan</a>
+                    <a href="index.html#kebahagiaan" class="shrink-0 text-xs font-bold">Jernih Berbagi kebahagiaan</a>
+                    <a href="index.html#silaturahmi" class="shrink-0 text-xs font-bold">Jernih Bersilaturahmi</a>
+                </div>
+                <div class="header-menu absolute top-[84px] left-0 w-screen max-h-0 bg-jb-lightgreen rounded-b-2xl overflow-hidden transition-all lg:rounded-none lg:relative lg:top-0 lg:w-full lg:bg-transparent lg:mt-4 lg:max-h-max lg:overflow-visible">
+                    <ul class="menu-inner px-5 py-2 lg:flex lg:justify-around lg:py-0 lg:items-center">
+                        <li class="relative py-2 text-sm font-bold hidden lg:block ">
+                            <a href="index.html#pengetahuan" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERBAGI PENGETAHUAN </a>
+                        </li>
+                        <li class="relative py-2 text-sm font-bold hidden lg:block ">
+                            <a href="index.html#kebahagiaan" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERBAGI KEBAHAGIAAN </a>
+                        </li>
+                        <li class="relative py-2 text-sm font-bold hidden lg:block ">
+                            <a href="index.html#silaturahmi" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERSILATURAHMI </a>
+                        </li>
+                        <li class="relative py-2 text-sm font-bold lg:p-0 ">
+                            <div class="profile-trigger relative w-full text-jb-blue transition-colors hidden cursor-default lg:block">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-4 h-4">
+                                        <img src="images/icon-profil.svg" alt="" />
+                                    </div>
+                                    <div>
+                                        <p>Hi, <span>User1234</span></p>
+                                        <p class="text-xs font-normal">Poin: <span>0</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-tulip lg:hidden lg:absolute lg:right-0 lg:w-72 lg:p-4 lg:rounded-xl lg:bg-jb-lightgreen">
+                                <div class="flex items-center justify-between mb-2 md:border-b md:border-b-jb-blue/50 md:pb-2">
+                                    <div class="flex gap-2 items-center">
+                                        <div class="max-w-[25px] h-[25px] rounded-[50%] overflow-hidden">
+                                            <img src="images/icon-profil.svg" alt="" class="w-full" />
+                                        </div>
+                                        <div class="text-left">
+                                            <a href="dashboard.html" class="block">
+                                                <p class="text-jb-blue font-bold text-sm text-left">Hi, <span>User1234!</span></p>
+                                                <div class="text-jb-yellow text-xs leading-none py-1">Lihat Profil</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="text-jb-blue text-xs text-left">Poin: 0</p>
+                                </div>
+                                <div class="text-center my-2 md:border-0">
+                                    <p class="text-xs text-jb-blue mb-2">Kumpulkan poin dengan ikut aktivitasnya</p>
+                                    <a href="dashboard.html" class="bg-jb-blue py-2 px-4 text-xs rounded-2xl text-white font-bold shadow w-full block">Kumpulkan poin sekarang</a>
+                                </div>
+                                <div class="bg-jb-green rounded-xl p-2 border text-center md:p-4">
+                                    <p class="text-xs text-white mb-2">Verifikasikan data dirimu untuk menukarkan poin</p>
+                                    <button class="bg-jb-yellow py-2 px-4 text-xs rounded-2xl text-white font-bold w-full" data-micromodal-trigger="modal-identitas">Verifikasi Sekarang</button>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="grow flex flex-col items-center justify-center pt-16 lg:pt-32">
+            <section class="bg-jb-navy bg-kalori bg-cover bg-center bg-no-repeat h-full w-full flex grow items-center justify-center">
+                <div class="container px-5 pt-10 pb-8">
+                    <div class="mx-auto text-center mt-5">
+                        <div class="km">
+                            <div class="km__title font-changa text-jb-yellow text-2xl md:text-4xl">
+                                Kalori Meter
+                            </div>
+                            <div class="km__subtitle">
+                                Hitung-hitung sebelum makan supaya kebutuhan kamu tercukupi
+                            </div>
+                            <!-- <div class="km__sub">Camilan Awal Tahun</div> -->
+                            <div class="km__foods">
+                                <div class="km__sliderwrap">
+                                    <div class="km__sliderwrap--ten">
+                                        <div class="km__slider km__slider--ten">
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/1_pangsit_goreng_isi.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/2_kentang_goreng_saus_keju.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/3_popcorn_caramel.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/4_empanada_roti_goreng_daging.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/5_bola_keju_pedas.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/6_mojito_mocktail.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/7_kacang_mete_panggang.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/8_saucijzenbroodjes_belanda.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/9_pina_colada.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/10_tteokbokki.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="km__sliderwrap--hundred">
+                                        <div class="km__slider km__slider--hundred">
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/1_pangsit_goreng_isi.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/2_kentang_goreng_saus_keju.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/3_popcorn_caramel.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/4_empanada_roti_goreng_daging.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/5_bola_keju_pedas.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/6_mojito_mocktail.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/7_kacang_mete_panggang.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/8_saucijzenbroodjes_belanda.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/9_pina_colada.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/highlight/10_tteokbokki.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/1_abon_sapi.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/2_acar_kuning.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/3_alpukat.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/4_anggur.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/5_apel.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/6_arsik.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/7_asinan.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/8_ati_ayam_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/9_ayam_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/10_ayam_goreng_kecap.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/11_ayam_panggang.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/12_ayam_pop.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/13_babat.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/14_bakso_daging_sapi.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/15_bakwan_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/16_bayam.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/17_bebek.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/18_belimbing.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/19_bihun_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/20_brokoli.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/21_brownies.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/22_bubur.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/23_bubur_ayam.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/24_bubur_sum_sum.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/25_cendol.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/26_chicken_wings.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/27_cireng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/28_daging_ayam.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/29_daging_panggang.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/30_dendeng_balado.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/31_dodol.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/32_donat.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/33_duku.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/34_durian_montong.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/35_empal_daging.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/36_es_buah.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/37_es_krim.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/38_fu_yung_hai.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/39_gado_gado.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/40_gudeg.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/41_gulai_ayam.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/42_hamburger.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/43_ikan_bandeng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/44_ikan_bandeng_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/45_ikan_bawal_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/46_ikan_lele_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/47_ikan_patin_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/48_ikan_segar.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/49_ikan_selar_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/50_ikan_tenggiri_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/51_ikan_teri_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/52_ikan_tuna_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/53_jagung_rebus.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/54_jamur_putih.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/55_jeruk.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/56_kastengel.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/57_kembang_kol.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/58_kentang_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/59_kentang_rebus.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/60_kerang_rebus.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/61_keripik_tempe.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/62_kerupuk_udang.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/63_ketoprak.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/64_ketupat.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/65_kol.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/66_kubis.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/67_kue_soes.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/68_lapis_legit.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/69_lontong_sayur.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/70_macaroni_schotel.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/71_makaroni.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/72_mi_bakso.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/73_mi_telur.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/74_mie_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/75_mie_instan.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/76_muffin.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/77_nanas.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/78_nasi_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/79_nasi_putih.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/80_nasi_tim.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/81_nasi_uduk.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/82_nastar.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/83_opor_ayam.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/84_pempek.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/85_pepaya.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/86_perkedel_jagung.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/87_perkedel_kentang.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/88_pir.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/89_pisang_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/90_pisang_rebus.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/91_pizza.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/92_putri_salju.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/93_rambutan.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/94_rawon.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/95_rendang.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/96_roti_tawar.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/97_salak.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/98_sate_ayam.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/99_sate_kambing.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/100_sayur_asam.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/101_sayur_krecek.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/102_sayur_lodeh.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/103_semangka.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/104_semur_ayam.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/105_siomay.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/106_sirsak.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/107_soda.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/108_sop_kimlo.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/109_sop_sapi.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/110_sosis.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/111_soto_ayam.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/112_soto_betawi.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/113_soto_makassar.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/114_soto_padang.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/115_soun_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/116_spaghetti.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/117_tahu_bacem.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/118_tahu_isi_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/119_tahu_sumedang.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/120_tape_singkong.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/121_tauge_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/122_telur.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/123_telur_asin_rebus.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/124_telur_dadar.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/125_telur_mata_sapi.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/126_tempe.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/127_tempe_bacem.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/128_tempe_goreng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/129_timun.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/130_tongseng.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/131_tumis_buncis.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/132_tumis_daun_singkong.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/133_ubi.jpg" alt="" />
+                                            </div>
+                                            <div class="km__slider--item">
+                                                <img src="images/kalorimeter/pendukung/134_wortel.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="km__optionwrap">
+                                    <select id="makanan" class="km__dropdown" onchange="getOption()">
+                                        <!-- <option value="pilih" disabled selected>Pilih</option> -->
+                                        <option value="PangsitGorengIsi" data-slide="0" data-gram="200 gram" data-calorie="399">Pangsit Goreng Isi</option>
+                                        <option value="KentangGorengSausKeju" data-slide="1" data-gram="400 gram" data-calorie="750">Kentang Goreng Saus Keju</option>
+                                        <option value="PopcornCaramel" data-slide="2" data-gram="100 gram" data-calorie="381">Popcorn Caramel</option>
+                                        <option value="EmpanadaRotiGorengDaging" data-slide="3" data-gram="100 gram" data-calorie="333,5">Empanada Roti Goreng Daging</option>
+                                        <option value="BolaKejuPedas" data-slide="4" data-gram="200 gram" data-calorie="438">Bola Keju Pedas</option>
+                                        <option value="MojitoMoctail" data-slide="5" data-gram="250 ml" data-calorie="240">Mojito Mocktail</option>
+                                        <option value="KacangMetePanggang" data-slide="6" data-gram="300 gram" data-calorie="157">Kacang Mete Panggang</option>
+                                        <option value="Saucijzenbroodjes Belanda" data-slide="7" data-gram="70 gram" data-calorie="249">Saucijzenbroodjes Belanda</option>
+                                        <option value="PinaColada" data-slide="8" data-gram="250 gram" data-calorie="264">Pina Colada</option>
+                                        <option value="Tteokbokki" data-slide="9" data-gram="350 gram" data-calorie="262">Tteokbokki</option>
+                                        <option value="AbonSapi" data-slide="10" data-gram="50 gram" data-calorie="158">Abon Sapi</option>
+                                        <option value="AcarKuning" data-slide="11" data-gram="75 gram" data-calorie="53">Acar Kuning</option>
+                                        <option value="Alpukat" data-slide="12" data-gram="100 gram" data-calorie="85">Alpukat</option>
+                                        <option value="Anggur" data-slide="13" data-gram="125 gram" data-calorie="60">Anggur</option>
+                                        <option value="Apel" data-slide="14" data-gram="125 gram" data-calorie="57">Apel</option>
+                                        <option value="Arsik" data-slide="15" data-gram="95 gram" data-calorie="94">Arsik</option>
+                                        <option value="Asinan" data-slide="16" data-gram="250 gram" data-calorie="208">Asinan</option>
+                                        <option value="AtiAyamGoreng" data-slide="17" data-gram="50 gram" data-calorie="98">Ati Ayam Goreng</option>
+                                        <option value="AyamGoreng" data-slide="18" data-gram="50 gram" data-calorie="196">Ayam Goreng</option>
+                                        <option value="AyamGorengKecap" data-slide="19" data-gram="75 gram" data-calorie="358,8">Ayam Goreng Kecap</option>
+                                        <option value="AyamPanggang" data-slide="20" data-gram="100 gram" data-calorie="164,3">Ayam Panggang</option>
+                                        <option value="AyamPop" data-slide="21" data-gram="200 gram" data-calorie="265">Ayam Pop</option>
+                                        <option value="Babat" data-slide="22" data-gram="40 gram" data-calorie="50">Babat</option>
+                                        <option value="BaksoDagingSapi" data-slide="23" data-gram="100 gram" data-calorie="260">Bakso Daging Sapi</option>
+                                        <option value="BakwanGoreng" data-slide="24" data-gram="" gram data-calorie="137">Bakwan Goreng</option>
+                                        <option value="Bayam" data-slide="25" data-gram="30 gram" data-calorie="7">Bayam</option>
+                                        <option value="Bebek" data-slide="26" data-gram="45 gram" data-calorie="150">Bebek</option>
+                                        <option value="Belimbing" data-slide="27" data-gram="160 gram" data-calorie="80">Belimbing</option>
+                                        <option value="BihunGoreng" data-slide="28" data-gram="150 gram" data-calorie="296">Bihun Goreng</option>
+                                        <option value="Brokoli" data-slide="29" data-gram="91 gram" data-calorie="31">Brokoli</option>
+                                        <option value="Brownies" data-slide="30" data-gram="100 gram" data-calorie="671">Brownies</option>
+                                        <option value="Bubur" data-slide="31" data-gram="200 gram" data-calorie="44">Bubur</option>
+                                        <option value="BuburAyam" data-slide="32" data-gram="200 gram" data-calorie="165">Bubur Ayam</option>
+                                        <option value="BuburSumSum" data-slide="33" data-gram="100 gram" data-calorie="178">Bubur Sum Sum</option>
+                                        <option value="Cendol" data-slide="34" data-gram="1 es mangkuk" data-calorie="300">Cendol</option>
+                                        <option value="ChickenWings" data-slide="35" data-gram="50 gram" data-calorie="63,6">Chicken Wings</option>
+                                        <option value="Cireng" data-slide="36" data-gram="100 gram" data-calorie="348">Cireng</option>
+                                        <option value="DagingAyam" data-slide="37" data-gram="40 gram" data-calorie="95">Daging Ayam</option>
+                                        <option value="DagingPanggang" data-slide="38" data-gram="70 gram" data-calorie="150">Daging Panggang</option>
+                                        <option value="DendengBalado" data-slide="39" data-gram="40 gram" data-calorie="338">Dendeng Balado</option>
+                                        <option value="Dodol" data-slide="40" data-gram="" data-calorie="78">Dodol</option>
+                                        <option value="Donat" data-slide="41" data-gram="" data-calorie="135">Donat</option>
+                                        <option value="Duku" data-slide="42" data-gram="200 gram" data-calorie="81">Duku</option>
+                                        <option value="DurianMontong" data-slide="43" data-gram="100 gram" data-calorie="134">Durian Montong</option>
+                                        <option value="EmpalDaging" data-slide="44" data-gram="100 gram" data-calorie="147">Empal Daging</option>
+                                        <option value="EsBuah" data-slide="45" data-gram="200 ml" data-calorie="183">Es Buah</option>
+                                        <option value="EsKrim" data-slide="46" data-gram="" data-calorie="240">Es Krim</option>
+                                        <option value="FuYungHai" data-slide="47" data-gram="52 gram" data-calorie="114">Fu Yung Hai</option>
+                                        <option value="GadoGado" data-slide="48" data-gram="150 gram" data-calorie="295">Gado Gado</option>
+                                        <option value="Gudeg" data-slide="49" data-gram="150 gram" data-calorie="132">Gudeg</option>
+                                        <option value="GulaiAyam" data-slide="50" data-gram="100 gram" data-calorie="165,3">Gulai Ayam</option>
+                                        <option value="Hamburger" data-slide="51" data-gram="125 gram" data-calorie="257">Hamburger</option>
+                                        <option value="IkanBandeng" data-slide="52" data-gram="100 gram" data-calorie="148">Ikan Bandeng</option>
+                                        <option value="IkanBandengGoreng" data-slide="53" data-gram="160 gram" data-calorie="180,7">Ikan Bandeng Goreng</option>
+                                        <option value="IkanBawalGoreng" data-slide="54" data-gram="120 gram" data-calorie="113,3">Ikan Bawal Goreng</option>
+                                        <option value="IkanLeleGoreng" data-slide="55" data-gram="60 gram" data-calorie="57,5">Ikan Lele Goreng</option>
+                                        <option value="IkanPatinGoreng" data-slide="56" data-gram="200 gram" data-calorie="252,7">Ikan Patin Goreng</option>
+                                        <option value="IkanSegar" data-slide="57" data-gram="50 gram" data-calorie="95">Ikan Segar</option>
+                                        <option value="IkanSelarGoreng" data-slide="58" data-gram="40 gram" data-calorie="63,75">Ikan Selar Goreng</option>
+                                        <option value="IkanTenggiriGoreng" data-slide="59" data-gram="60 gram" data-calorie="85,3">Ikan Tenggiri Goreng</option>
+                                        <option value="IkanTeriGoreng" data-slide="60" data-gram="50 gram" data-calorie="66">Ikan Teri Goreng</option>
+                                        <option value="IkanTunaGoreng" data-slide="61" data-gram="60 gram" data-calorie="110">Ikan Tuna Goreng</option>
+                                        <option value="JagungRebus" data-slide="62" data-gram="250 gram" data-calorie="90">Jagung Rebus</option>
+                                        <option value="JamurPutih" data-slide="63" data-gram="70 gram" data-calorie="15">Jamur Putih</option>
+                                        <option value="Jeruk" data-slide="64" data-gram="100 gram" data-calorie="40">Jeruk</option>
+                                        <option value="Kastengel" data-slide="65" data-gram="" data-calorie="20">Kastengel</option>
+                                        <option value="KembangKol" data-slide="66" data-gram="100 gram" data-calorie="25">Kembang Kol</option>
+                                        <option value="KentangGoreng" data-slide="67" data-gram="150 gram" data-calorie="211">Kentang Goreng</option>
+                                        <option value="KentangRebus" data-slide="68" data-gram="200 gram" data-calorie="166">Kentang Rebus</option>
+                                        <option value="KerangRebus" data-slide="69" data-gram="100 gram" data-calorie="59">Kerang Rebus</option>
+                                        <option value="KeripikTempe" data-slide="70" data-gram="25 gram" data-calorie="68">Keripik Tempe</option>
+                                        <option value="KerupukUdang" data-slide="71" data-gram="20 gram" data-calorie="72">Kerupuk Udang</option>
+                                        <option value="Ketoprak" data-slide="72" data-gram="250 gram" data-calorie="153">Ketoprak</option>
+                                        <option value="Ketupat" data-slide="73" data-gram="160 gram" data-calorie="32">Ketupat</option>
+                                        <option value="Kol" data-slide="74" data-gram="100 gram" data-calorie="25">Kol</option>
+                                        <option value="Kubis" data-slide="75" data-gram="89 gram" data-calorie="22">Kubis</option>
+                                        <option value="KueSoes" data-slide="76" data-gram="70 gram" data-calorie="130">Kue Soes</option>
+                                        <option value="LapisLegit" data-slide="77" data-gram="" data-calorie="511">Lapis Legit</option>
+                                        <option value="LontongSayur" data-slide="78" data-gram="" data-calorie="389">Lontong Sayur</option>
+                                        <option value="MacaroniSchotel" data-slide="79" data-gram="50 gram" data-calorie="177">Macaroni Schotel</option>
+                                        <option value="Makaroni" data-slide="80" data-gram="25 gram" data-calorie="91">Makaroni</option>
+                                        <option value="MiBakso" data-slide="81" data-gram="200 gram" data-calorie="302">Mi Bakso</option>
+                                        <option value="MiTelur" data-slide="82" data-gram="" data-calorie="321">Mi Telur</option>
+                                        <option value="MieGoreng" data-slide="83" data-gram="200 gram" data-calorie="321">Mie Goreng</option>
+                                        <option value="MieInstan" data-slide="84" data-gram="50 gram" data-calorie="168">Mie Instan</option>
+                                        <option value="Muffin" data-slide="85" data-gram="" data-calorie="120">Muffin</option>
+                                        <option value="Nanas" data-slide="86" data-gram="200 gram" data-calorie="104">Nanas</option>
+                                        <option value="NasiGoreng" data-slide="87" data-gram="100 gram" data-calorie="267">Nasi Goreng</option>
+                                        <option value="NasiPutih" data-slide="88" data-gram="100 gram" data-calorie="400">Nasi Putih</option>
+                                        <option value="NasiTim" data-slide="89" data-gram="100 gram" data-calorie="88">Nasi Tim</option>
+                                        <option value="NasiUduk" data-slide="90" data-gram="200 gram" data-calorie="506">Nasi Uduk</option>
+                                        <option value="Nastar" data-slide="91" data-gram="" data-calorie="26">Nastar</option>
+                                        <option value="OporAyam" data-slide="92" data-gram="" data-calorie="320">Opor Ayam</option>
+                                        <option value="Pempek" data-slide="93" data-gram="200 gram" data-calorie="384">Pempek</option>
+                                        <option value="Pepaya" data-slide="94" data-gram="100 gram" data-calorie="46">Pepaya</option>
+                                        <option value="PerkedelJagung" data-slide="95" data-gram="50 gram" data-calorie="108">Perkedel Jagung</option>
+                                        <option value="PerkedelKentang" data-slide="96" data-gram="51 gram" data-calorie="123">Perkedel Kentang</option>
+                                        <option value="Pir" data-slide="97" data-gram="200 gram" data-calorie="80">Pir</option>
+                                        <option value="PisangGoreng" data-slide="98" data-gram="" data-calorie="68">Pisang Goreng</option>
+                                        <option value="PisangRebus" data-slide="99" data-gram="125 gram" data-calorie="136,5">Pisang Rebus</option>
+                                        <option value="Pizza" data-slide="100" data-gram="125 gram" data-calorie="163">Pizza</option>
+                                        <option value="PutriSalju" data-slide="101" data-gram="" data-calorie="23">Putri Salju</option>
+                                        <option value="Rambutan" data-slide="102" data-gram="100 gram" data-calorie="69">Rambutan</option>
+                                        <option value="Rawon" data-slide="103" data-gram="160 gram" data-calorie="331">Rawon</option>
+                                        <option value="Rendang" data-slide="104" data-gram="" data-calorie="468">Rendang</option>
+                                        <option value="RotiTawar" data-slide="105" data-gram="50 gram" data-calorie="128">Roti Tawar</option>
+                                        <option value="Salak" data-slide="106" data-gram="150 gram" data-calorie="63,6">Salak</option>
+                                        <option value="SateAyam" data-slide="107" data-gram="100 gram" data-calorie="466">Sate Ayam</option>
+                                        <option value="SateKambing" data-slide="108" data-gram="180 gram" data-calorie="729">Sate Kambing</option>
+                                        <option value="SayurAsam" data-slide="109" data-gram="100 gram" data-calorie="88">Sayur Asam</option>
+                                        <option value="SayurKrecek" data-slide="110" data-gram="175 gram" data-calorie="249">Sayur Krecek</option>
+                                        <option value="SayurLodeh" data-slide="111" data-gram="100 gram" data-calorie="61">Sayur Lodeh</option>
+                                        <option value="Semangka" data-slide="112" data-gram="150 gram" data-calorie="48">Semangka</option>
+                                        <option value="SemurAyam" data-slide="113" data-gram="50 gram" data-calorie="177,8">Semur Ayam</option>
+                                        <option value="Siomay" data-slide="114" data-gram="100 gram" data-calorie="361">Siomay</option>
+                                        <option value="Sirsak" data-slide="115" data-gram="12 gram" data-calorie="55">Sirsak</option>
+                                        <option value="Soda" data-slide="116" data-gram="" data-calorie="300">Soda</option>
+                                        <option value="SopKimlo" data-slide="117" data-gram="100 gram" data-calorie="104">Sop Kimlo</option>
+                                        <option value="SopSapi" data-slide="118" data-gram="260 gram" data-calorie="227">Sop Sapi</option>
+                                        <option value="Sosis" data-slide="119" data-gram="50 gram" data-calorie="150">Sosis</option>
+                                        <option value="SotoAyam" data-slide="120" data-gram="100 gram" data-calorie="101">Soto Ayam</option>
+                                        <option value="SotoBetawi" data-slide="121" data-gram="150 gram" data-calorie="135">Soto Betawi</option>
+                                        <option value="SotoMakassar" data-slide="122" data-gram="150 gram" data-calorie="525">Soto Makassar</option>
+                                        <option value="SotoPadang" data-slide="123" data-gram="100 gram" data-calorie="127">Soto Padang</option>
+                                        <option value="SounGoreng" data-slide="124" data-gram="100 gram" data-calorie="263">Soun Goreng</option>
+                                        <option value="Spaghetti" data-slide="125" data-gram="300 gram" data-calorie="642">Spaghetti</option>
+                                        <option value="TahuBacem" data-slide="126" data-gram="100 gram" data-calorie="147">Tahu Bacem</option>
+                                        <option value="TahuIsiGoreng" data-slide="127" data-gram="" data-calorie="134">Tahu Isi Goreng</option>
+                                        <option value="TahuSumedang" data-slide="128" data-gram="100 gram" data-calorie="113">Tahu Sumedang</option>
+                                        <option value="TapeSingkong" data-slide="129" data-gram="150 gram" data-calorie="260">Tape Singkong</option>
+                                        <option value="TaugeGoreng" data-slide="130" data-gram="250 gram" data-calorie="243">Tauge Goreng</option>
+                                        <option value="Telur" data-slide="131" data-gram="" data-calorie="74">Telur</option>
+                                        <option value="TelurAsinRebus" data-slide="132" data-gram="75 gram" data-calorie="138">Telur Asin Rebus</option>
+                                        <option value="TelurDadar" data-slide="133" data-gram="75 gram" data-calorie="188">Telur Dadar</option>
+                                        <option value="TelurMataSapi" data-slide="134" data-gram="60 gram" data-calorie="40">Telur Mata Sapi</option>
+                                        <option value="Tempe" data-slide="135" data-gram="50 gram" data-calorie="40">Tempe</option>
+                                        <option value="TempeBacem" data-slide="136" data-gram="50 gram" data-calorie="157">Tempe Bacem</option>
+                                        <option value="TempeGoreng" data-slide="137" data-gram="" data-calorie="34">Tempe Goreng</option>
+                                        <option value="Timun" data-slide="138" data-gram="52 gram" data-calorie="8">Timun</option>
+                                        <option value="Tongseng" data-slide="139" data-gram="120 gram" data-calorie="331">Tongseng</option>
+                                        <option value="TumisBuncis" data-slide="140" data-gram="100 gram" data-calorie="52">Tumis Buncis</option>
+                                        <option value="TumisDaunSingkong" data-slide="141" data-gram="120 gram" data-calorie="151">Tumis Daun Singkong</option>
+                                        <option value="Ubi" data-slide="142" data-gram="135 gram" data-calorie="175">Ubi</option>
+                                        <option value="Wortel" data-slide="143" data-gram="128 gram" data-calorie="53">Wortel</option>
+                                    </select>
+                                </div>
+
+                                <div class="km__info">
+                                    <div class="km__info--weight">
+                                        <p>Estimasi 1 porsi</p>
+                                        <p>Berat <span class="km__info--gram">200 Gram</span></p>
+                                        <small>Sumber: Kompas.com</small>
+                                    </div>
+                                    <div class="km__info--calories">
+                                        <div class="km__info--content">
+                                            <span>kal</span>
+                                            <img src="images/kalorimeter/fire.png" alt="" />
+                                        </div>
+                                        <div class="km__info--value">399</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="km__article">
+                                <div class="km__article--title">Cek serba-serbi kalori makanan lainnya di sini:</div>
+                                <div class="km__article--wrap">
+                                    <div class="km__article--item">
+                                        <a href="https://www.kompas.com/sains/read/2022/11/04/210000923/cara-menghitung-kebutuhan-kalori-harian" target="_blank">
+                                            <div class="km__article--img">
+                                                <img src="https://asset.kompas.com/crops/V6qv2jPbuPQaqgBRIXFvBjNdGrA=/0x74:1000x574/750x500/data/photo/2020/12/21/5fdff3ac0c505.jpg" alt="" />
+                                            </div>
+                                            <div class="km__article--newstitle">Cara Menghitung Kebutuhan Kalori Harian</div>
+                                        </a>
+                                    </div>
+                                    <div class="km__article--item">
+                                        <a href="https://www.kompas.com/sains/read/2020/12/21/100100023/sering-muncul-pada-kemasan-makanan-apa-beda-kalori-dan-kkal?page=all" target="_blank">
+                                            <div class="km__article--img">
+                                                <img src="https://asset.kompas.com/crops/ihGbo3XoVnDVT-SQy4kuRBEJrng=/0x0:1000x667/750x500/data/photo/2020/12/21/5fdff3270376f.jpg" alt="" />
+                                            </div>
+                                            <div class="km__article--newstitle">Sering Muncul pada Kemasan Makanan, Apa Beda Kalori dan Kkal?</div>
+                                        </a>
+                                    </div>
+                                    <div class="km__article--item">
+                                        <a href="https://lifestyle.kompas.com/read/2023/01/01/110940520/berniat-turunkan-berat-badan-di-tahun-2023-hindari-makanan-berikut?page=all" target="_blank">
+                                            <div class="km__article--img">
+                                                <img src="https://asset.kompas.com/crops/evh5rrFumUQ6CABlT8TVNKEDFj4=/0x0:1000x667/750x500/data/photo/2022/06/27/62b8ac0b316dc.jpg" alt="" />
+                                            </div>
+                                            <div class="km__article--newstitle">Berniat Turunkan Berat Badan di Tahun 2023, Hindari Makanan Berikut</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-jb-blue">
+            <div class="container text-center px-5 py-8">
+                <div class="w-32 mx-auto">
+                    <img src="images/logo-jernihberbagi-white.svg" alt="" />
+                </div>
+                <p class="text-xs text-jb-red mt-2">&#169; 2022 Kompascom. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- [modal identitas] -->
+    <div class="modal modal__dark micromodal-slide" id="modal-identitas" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container modal__container__fix modal__border" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <div class="text-jb-navy font-bold mt-4 mb-2 text-center">Lengkapi identitasmu untuk menukarkan poin</div>
+                    <form action="index-verif-success.html">
+                        <input type="text" name="nama" id="" placeholder="Nama" class="border border-jb-navy my-2 py-1 px-3 w-full rounded-3xl" />
+                        <input type="text" name="telepon" id="" placeholder="Nomor Telepon" class="border border-jb-navy my-2 py-1 px-3 w-full rounded-3xl" />
+                        <label for="uploadktp" class="text-jb-navy text-left block font-bold mb-1">Foto KTP</label>
+                        <input type="file" name="" id="uploadktp" class="text-sm w-full" />
+                        <input type="submit" value="Submit" class="text-white font-bold bg-jb-red py-1 px-8 rounded-full block mx-auto mt-4 modal__closetrigger" />
+                    </form>
+                </main>
+                <footer class="modal__footer"></footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/micromodal.min.js"></script>
+    <script src="js/jernihberbagi.js"></script>
+
+    <!-- js kalorimeter -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/kalorimeter.js"></script>
+</body>
+
+</html>

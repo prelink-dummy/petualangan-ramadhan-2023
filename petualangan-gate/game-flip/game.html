@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipcard Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/flipcardgame.css" />
+
+    <link rel="apple-touch-icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+    <link rel="shortcut icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+
+    <!-- S:fb meta -->
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="images/share-img.jpg" />
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="-" />
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="324557847592228" />
+    <!-- e:fb meta -->
+
+    <!-- S:tweeter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@kgmediaid" />
+    <meta name="twitter:creator" content="@kgmediaid" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="images/share-img-1.jpg" />
+    <!-- E:tweeter card -->
+</head>
+
+<body>
+    <div class="flipcard">
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo-kompas.png" alt="" />
+            </div>
+            <div class="bgm">
+                <img src="images/sound-unmuted.png" alt="" />
+            </div>
+        </div>
+        <div class="steps first__step">
+            <h1 class="title">
+                FLIP HURUF <br />
+                HIJAIYAH
+            </h1>
+            <div class="headimg">
+                <p>
+                    Temukan Gambar
+                    <br />
+                    Huruf Hijaiyah Yang Sesuai
+                </p>
+            </div>
+            <img src="images/cover.png" alt="" class="cover" />
+            <button class="btn btn__primary btn__start">Main Sekarang</button>
+            <button class="btn btn__tnc">Syarat dan Ketentuan</button>
+            <div class="popup">
+                <div class="popup__wrap">
+                    <div class="popup__close">
+                        <img src="images/icon-close.png" alt="">
+                    </div>
+                    <h3>Syarat dan Ketentuan</h3>
+                    <ul>
+                        <li>
+                            Tap untuk membuka beberapa kotak dan cocokkan gambar
+                        </li>
+                        <li>
+                            Kamu dapat 5 poin jika main lebih dari 10 detik dan 10 poin jika lebih dari 30 detik
+                        </li>
+                        <li>
+                            Jangan lupa log in dulu sebelum bermain
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="steps second__step hide slow__hide">
+            <div class="timer">
+                <div class="stopwatch">00:00:00</div>
+            </div>
+            <div class="game__wrapper">
+                <div class="game__card" data-img="img1">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-1.png" />
+                </div>
+                <div class="game__card" data-img="img1">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-1.png" />
+                </div>
+                <div class="game__card" data-img="img2">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-2.png" />
+                </div>
+                <div class="game__card" data-img="img2">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-2.png" />
+                </div>
+                <div class="game__card" data-img="img3">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-3.png" />
+                </div>
+                <div class="game__card" data-img="img3">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-3.png" />
+                </div>
+                <div class="game__card" data-img="img4">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-4.png" />
+                </div>
+                <div class="game__card" data-img="img4">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-4.png" />
+                </div>
+                <div class="game__card" data-img="img5">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-5.png" />
+                </div>
+                <div class="game__card" data-img="img5">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-5.png" />
+                </div>
+                <div class="game__card" data-img="img6">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-6.png" />
+                </div>
+                <div class="game__card" data-img="img6">
+                    <img class="game__card--back" src="images/card-back.png" />
+                    <img class="game__card--front" src="images/card-front-6.png" />
+                </div>
+            </div>
+            <div class="hidden__sound">
+                <audio controls class="game__sound">
+                    <source src="sound/game-sound.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="play__bg"></button>
+            </div>
+        </div>
+        <div class="steps third__step hide slow__hide">
+            <div class="content">
+                <img src="images/end.png" alt="" class="end" />
+                <p>Selamat! Kamu berhasil mendapatkan <span class="points">10 Poin</span></p>
+                <br />
+                <p>Terima kasih sudah ikutan</p>
+                <button class="btn btn__primary replay">Main Lagi</button>
+                <div class="socials__wrap">
+                    <p>Ajak teman ikutan</p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/facebook.png" alt="" />
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?text=Flipcard Game&amp;url=#" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/twitter.png" alt="" />
+                            </div>
+                        </a>
+                        <a href="whatsapp://send?text=FLipcard Game #" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/whatsapp.png" alt="" />
+                            </div>
+                        </a>
+                        <a href="#" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/link.png" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/flipcardgame.js"></script>
+</body>
+
+</html>

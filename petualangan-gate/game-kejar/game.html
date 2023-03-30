@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <title>Run Away Game</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Run Away Game">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <link rel="apple-touch-icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+    <link rel="shortcut icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+
+    <!-- S:fb meta -->
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="images/share-img.jpg" />
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="-" />
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="324557847592228" />
+    <!-- e:fb meta -->
+
+    <!-- S:tweeter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@kgmediaid" />
+    <meta name="twitter:creator" content="@kgmediaid">
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="images/share-img.jpg" />
+    <!-- E:tweeter card -->
+
+    <link rel="stylesheet" href="css/kejarpahala.css">
+</head>
+
+<body>
+    <div class="game__wrap">
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo-kompas.png" alt="">
+            </div>
+            <div class="bgm">
+                <img src="images/sound-unmuted.png" alt="">
+            </div>
+        </div>
+        <div class="steps step__one">
+            <div class="front__title">
+                <img src="images/title.png" alt="">
+            </div>
+            <div class="front__img">
+                <img src="images/cover.png" alt="">
+            </div>
+            <button class="btn btn__primary btn__start">
+                Main Sekarang
+            </button>
+            <button class="btn btn__tnc">
+                Syarat dan Ketentuan
+            </button>
+
+            <div class="popup">
+                <div class="popup__wrap">
+                    <div class="popup__close">
+                        <img src="images/icon-close.png" alt="">
+                    </div>
+                    <h3>Syarat dan Ketentuan</h3>
+                    <ul>
+                        <li>
+                            Tap layar untuk memulai dan tekan tombol spasi di keyboard untuk menggerakkan objek
+                        </li>
+                        <li>
+                            Hindari jebakan untuk terus bermain
+                        </li>
+                        <li>
+                            Kamu dapat 10 poin jika selesai di bawah 30 detik dan 5 poin jika lebih dari 30 detik
+                        </li>
+                        <li>
+                            Jangan lupa log in dulu sebelum bermain
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main-frame-error" class="interstitial-wrapper steps step__two" jstcache="0">
+            <div class="game__title">
+                <div class="onlyforchrome title__small">Tap layar untuk mulai permainan</div>
+            </div>
+
+            <div id="offline-resources" jstcache="0">
+                <div id="offline-resources-1x" jstcache="0">
+                    <img id="1x-obstacle-large" src="images/obstacle-large.png" jstcache="0">
+                    <img id="1x-obstacle-small" src="images/obstacle-small.png" jstcache="0">
+                    <img id="1x-text" src="images/text.png" jstcache="0">
+                    <img id="1x-horizon" src="images/horizon.png" jstcache="0">
+                    <img id="1x-trex" src="images/dino.png" jstcache="0">
+                    <img id="1x-restart" src="images/restart.png" jstcache="0">
+                </div>
+                <div id="offline-resources-2x" jstcache="0">
+                    <img id="2x-obstacle-large" src="images/obstacle-large2x.png" jstcache="0">
+                    <img id="2x-obstacle-small" src="images/obstacle-small2x.png" jstcache="0">
+                    <img id="2x-text" src="images/text2x.png" jstcache="0">
+                    <img id="2x-horizon" src="images/horizon2x.png" jstcache="0">
+                    <img id="2x-trex" src="images/dino2x.png" jstcache="0">
+                    <img id="2x-restart" src="images/restart2x.png" jstcache="0">
+                </div>
+            </div>
+
+            <!-- <div class="game__sprite">
+        <img src="images/game-sprite.png" alt="">
+      </div> -->
+
+            <audio controls class="bg__sound game__hide">
+                <source src="sound/bgm.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <audio controls class="jump__sound game__hide">
+                <source src="sound/jump.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div class="scorebar game__hide"></div>
+            <div class="timer game__hide">
+                <div class="stopwatch">
+                    00:00:00
+                </div>
+            </div>
+            <!-- <small class="courtesy">BGM Courtesy Of Youtube</small> -->
+        </div>
+        <div class="steps step__three game__hide">
+            <div class="end__wrap">
+                <div class="img__end">
+                    <img src="images/end.png" alt="">
+                </div>
+                <div>
+                    <p>Selamat! Kamu berhasil <br> mendapatkan <span class="endtime">10 Poin</span></p>
+                    <br>
+                    <p>Terima kasih sudah ikutan</p>
+                </div>
+                <div class="btn btn__primary btn__replay">Main Lagi</div>
+                <div class="socials__wrap">
+                    <p>Ajak teman ikutan</p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/facebook.png" alt="">
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?text=Flipcard Game&amp;url=#" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/twitter.png" alt="">
+                            </div>
+                        </a>
+                        <a href="whatsapp://send?text=FLipcard Game #" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/whatsapp.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/link.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="steps step__four game__hide" style="background-image: url(images/bg.jpg);">
+
+        </div>
+    </div>
+
+    <script src="js/kejarpahala.js"></script>
+
+</body>
+
+</html>

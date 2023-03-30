@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tap Tap Game</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="Tap Tap Game" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="images/share-img.jpg" />
+    <meta property="og:site_name" content="-" />
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="324557847592228" />
+
+    <!-- S:tweeter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@kompascom" />
+    <meta name="twitter:creator" content="@kompascom" />
+    <meta name="twitter:title" content="Tap Tap Game" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="images/share-img.jpg" />
+    <!-- E:tweeter card -->
+
+    <link rel="apple-touch-icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+    <link rel="shortcut icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/taptapgame.css" />
+</head>
+
+<body style="background: #392160">
+    <div class="wrap">
+        <div id="ad-container">
+            <audio controls loop class="bg__sound hidden">
+                <source src="sound/bgm.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+
+            <img src="images/bg.jpg" id="bg" />
+            <img src="images/track2.png" id="track" />
+
+            <img src="images/logo-kompas.png" id="logokompas" />
+
+            <img src="images/item1.png" id="item1" />
+            <img src="images/item2.png" id="item2" />
+            <img src="images/item3.png" id="item3" />
+            <img src="images/item4.png" id="item4" />
+
+            <img src="images/front.png" id="frontimg" />
+            <img src="images/logo1.png" id="front" />
+            <img src="images/logo2.png" id="top" />
+            <!-- <img src="images/start-btn.png" id="ctaplay" /> -->
+            <button id="ctaplay" class="btn btn__primary">Main Sekarang</button>
+            <button id="gamemekanisme" class="btn">Syarat dan Ketentuan</button>
+            <!-- <div id="gamemekanisme">
+                    <p>RULES</p>
+                    <img src="images/icon-rules.svg" />
+                </div> -->
+            <!-- <small id="musiccredit">Music courtesy: youtube.com/dyalla</small> -->
+
+            <div id="timercon">00:30</div>
+            <div id="pointcon">00</div>
+
+            <div id="pointEnd">
+                <p>Point Kamu:</p>
+                <span id="pointEndSpan">00</span>
+            </div>
+
+            <div id="bar" style="background-image: url(images/bar.jpg)"></div>
+            <img src="images/pola1.png" id="hole1" />
+            <img src="images/pola2.png" id="hole2" />
+            <img src="images/pola3.png" id="hole3" />
+            <img src="images/pola4.png" id="hole4" />
+
+            <img src="images/splat.png" id="splat1" />
+            <img src="images/splat.png" id="splat2" />
+            <img src="images/splat.png" id="splat3" />
+            <img src="images/splat.png" id="splat4" />
+
+            <div id="hotspot1"></div>
+            <div id="hotspot2"></div>
+            <div id="hotspot3"></div>
+            <div id="hotspot4"></div>
+            <img src="images/item1.png" id="tapped1" />
+            <img src="images/item2.png" id="tapped2" />
+            <img src="images/item3.png" id="tapped3" />
+            <img src="images/item4.png" id="tapped4" />
+
+            <img src="images/instruction.jpg" alt="" id="instruction">
+
+            <img src="images/end.png" id="lastimg" />
+
+            <div id="textend">
+                Selamat! Kamu berhasil mendapatkan <span id="textpoint">0</span> Poin!
+                <br>
+                <br>
+                Terima kasih sudah ikutan
+            </div>
+
+            <button id="gamereplay" class="btn btn__primary">Main Lagi</button>
+
+            <div id="endshare">
+                <p>Ajak Teman Ikutan</p>
+                <div class="game__share">
+                    <a href="whatsapp://send?text=Run Away #)" class="share share--wa">
+                        <img src="images/whatsapp.png" alt="" />
+                    </a>
+                    <a href="http://www.twitter.com/share?url=http://www.google.com/" class="share share--wa">
+                        <img src="images/twitter.png" alt="" />
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=#" class="share share--fb">
+                        <img src="images/facebook.png" alt="" />
+                    </a>
+                    <a href="#" target="_blank" class="share share--link">
+                        <img src="images/link.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="muted hidden">
+                <img src="images/sound-muted.png" alt="" />
+            </div>
+
+            <div class="unmuted hidden">
+                <img src="images/sound-unmuted.png" alt="" />
+            </div>
+
+            <div id="popup">
+                <div id="popup__wrap">
+                    <div id="popup__close">
+                        <img src="images/icon-close.png" alt="" />
+                    </div>
+                    <h3>Syarat & Ketentuan</h3>
+                    <ul>
+                        <li>
+                            Tap benda yang jatuh ke dalam frame
+                        </li>
+                        <li>
+                            Kamu dapat 1 poin untuk setiap objek yang kamu dapatkan (maksimal 30 poin)
+                        </li>
+                        <li>
+                            Jangan lupa log in dulu sebelum bermain
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="border"></div>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="js/hammer.2.0.8.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/taptapgame.js"></script>
+</body>
+
+</html>

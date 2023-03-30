@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ramadan Jernih Berbagi - Kompas.com</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+
+        <link rel="apple-touch-icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+        <link rel="shortcut icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/tiny-slider.css" />
+        <link rel="stylesheet" href="css/tailwind.css" />
+    </head>
+
+    <body>
+        <div class="wrap">
+            <header class="fixed w-full bg-jb-lightgreen bg-no-repeat bg-right-top bg-contain z-10 bg-header transition-all lg:rounded-none">
+                <div class="header-container container px-5 py-3 relative h-[52px] flex items-center justify-between lg:h-auto lg:flex-col">
+                    <div class="header-logo w-16 transition-all overflow-hidden lg:max-h-14 lg:mx-auto lg:w-32">
+                        <a href="index.html">
+                            <img src="images/logo-jernihberbagi.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="header-mobile w-10 lg:hidden">
+                        <img src="images/menu.svg" alt="" />
+                    </div>
+                    <div class="menu-mobile absolute top-[52px] w-full left-0 bg-jb-blue text-white p-2 overflow-x-scroll flex gap-4 scrollbar-none lg:hidden">
+                        <a href="#pengetahuan" class="shrink-0 text-xs font-bold">Jernih Berbagi Pengetahuan</a>
+                        <a href="#kebahagiaan" class="shrink-0 text-xs font-bold">Jernih Berbagi kebahagiaan</a>
+                        <a href="#silaturahmi" class="shrink-0 text-xs font-bold">Jernih Bersilaturahmi</a>
+                    </div>
+                    <div class="header-menu absolute top-[84px] left-0 w-screen max-h-0 bg-jb-lightgreen rounded-b-2xl overflow-hidden transition-all lg:rounded-none lg:relative lg:top-0 lg:w-full lg:bg-transparent lg:mt-4 lg:max-h-max lg:overflow-visible">
+                        <ul class="menu-inner px-5 py-2 lg:flex lg:justify-around lg:py-0 lg:items-center">
+                            <li class="relative py-2 text-sm font-bold hidden lg:block">
+                                <a href="#pengetahuan" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red active"> JERNIH BERBAGI PENGETAHUAN </a>
+                            </li>
+                            <li class="relative py-2 text-sm font-bold hidden lg:block">
+                                <a href="#kebahagiaan" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERBAGI KEBAHAGIAAN </a>
+                            </li>
+                            <li class="relative py-2 text-sm font-bold hidden lg:block">
+                                <a href="#silaturahmi" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERSILATURAHMI </a>
+                            </li>
+                            <li class="relative py-2 text-sm font-bold lg:p-0">
+                                <div class="profile-trigger relative w-full text-jb-blue transition-colors hidden cursor-default lg:block">
+                                    <div class="flex gap-2 items-center">
+                                        <div class="w-4 h-4">
+                                            <img src="images/icon-profil.svg" alt="" />
+                                        </div>
+                                        <div>
+                                            <p>Hi, <span>User1234</span></p>
+                                            <p class="text-xs font-normal">Poin: <span>0</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-tulip lg:hidden lg:absolute lg:right-0 lg:w-72 lg:p-4 lg:rounded-xl lg:bg-jb-lightgreen">
+                                    <div class="flex items-center justify-between mb-2 md:border-b md:border-b-jb-blue/50 md:pb-2">
+                                        <div class="flex gap-2 items-center">
+                                            <div class="max-w-[25px] h-[25px] rounded-[50%] overflow-hidden">
+                                                <img src="images/icon-profil.svg" alt="" class="w-full" />
+                                            </div>
+                                            <div class="text-left">
+                                                <a href="dashboard.html" class="block">
+                                                    <p class="text-jb-blue font-bold text-sm text-left">Hi, <span>User1234!</span></p>
+                                                    <div class="text-jb-yellow text-xs leading-none py-1">Lihat Profil</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="text-jb-blue text-xs text-left">Poin: 0</p>
+                                    </div>
+                                    <div class="text-center my-2 md:border-0">
+                                        <p class="text-xs text-jb-blue mb-2">Kumpulkan poin dengan ikut aktivitasnya</p>
+                                        <a href="dashboard.html" class="bg-jb-blue py-2 px-4 text-xs rounded-2xl text-white font-bold shadow w-full block">Kumpulkan poin sekarang</a>
+                                    </div>
+                                    <div class="bg-jb-green rounded-xl p-2 border text-center md:p-4">
+                                        <p class="text-xs text-white mb-2">Verifikasikan data dirimu untuk menukarkan poin</p>
+                                        <button class="bg-jb-yellow py-2 px-4 text-xs rounded-2xl text-white font-bold w-full" data-micromodal-trigger="modal-identitas">Verifikasi Sekarang</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <main class="pt-16 lg:pt-32">
+                <div class="page-section" id="pengetahuan">
+                    <section class="bg-cover bg-center bg-no-repeat bg-section-1">
+                        <div class="container px-5 pt-10 pb-8">
+                            <div class="w-full">
+                                <iframe src="jadwalimsak-alt-desktop.html" frameborder="0" width="1060" height="225" class="overflow-hidden hidden lg:block"></iframe>
+                                <iframe src="jadwalimsak-alt-mobile.html" frameborder="0" width="100%" height="188" class="overflow-hidden block lg:hidden"></iframe>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="bg-jb-blue bg-no-repeat bg-section-2">
+                        <div class="container px-5 py-8 md:py-12">
+                            <div class="grid gap-6 md:grid-cols-2 md:gap-20 md:items-center">
+                                <div>
+                                    <h1 class="text-2xl font-changa text-white md:text-4xl">Ramadhan Playlist</h1>
+                                    <p class="text-white mt-2">Rangkaian tontonan seru dan menjernihkan untuk Ramadhan yang semakin berkesan.</p>
+                                </div>
+                                <div class="aspect-video rounded-xl overflow-hidden">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QTPtpQYl8ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <div class="slider-playlist">
+                                    <div>
+                                        <a href="detail-playlist.html">
+                                            <div class="aspect-video relative rounded-xl overflow-hidden">
+                                                <img src="images/cover-playlist.jpg" alt="" />
+                                                <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/30">
+                                                    <img src="images/icon-play.svg" alt="" class="w-12 h-12" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="detail-playlist.html">
+                                            <div class="aspect-video relative rounded-xl overflow-hidden">
+                                                <img src="images/cover-playlist.jpg" alt="" />
+                                                <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/30">
+                                                    <img src="images/icon-play.svg" alt="" class="w-12 h-12" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="detail-playlist.html">
+                                            <div class="aspect-video relative rounded-xl overflow-hidden">
+                                                <img src="images/cover-playlist.jpg" alt="" />
+                                                <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/30">
+                                                    <img src="images/icon-play.svg" alt="" class="w-12 h-12" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="index-playlist.html" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mt-4 mx-auto md:mt-8">Selengkapnya <span class="bg-[url(../images/icon-right.png)] bg-cover bg-no-repeat w-4 h-4 inline-block brightness-300"></span></a>
+                        </div>
+                    </section>
+
+                    <section class="bg-cover bg-center bg-no-repeat bg-section-3">
+                        <div class="container px-5 py-8 md:py-12">
+                            <h1 class="text-2xl font-changa mt-3 text-jb-navy md:text-4xl">Jurnal Ramadhan</h1>
+
+                            <div class="grid md:grid-cols-3 md:gap-8">
+                                <div class="mb-4">
+                                    <div class="bg-jb-navy text-white font-changa text-lg px-4 py-2 rounded-md mb-4">Info Ramadhan Terkini</div>
+                                    <div class="max-h-[235px] overflow-y-auto scrollbar-thin scrollbar-thumb-jb-navy scrollbar-track-jb-seablue scrollbar-rounded-full pl-2 pr-6 md:max-h-[300px]">
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="index-inforamadan.html" class="text-jb-red text-sm flex items-center gap-2 font-bold my-4">Selengkapnya <span class="bg-[url(../images/icon-right.png)] bg-cover bg-no-repeat w-3 h-3 inline-block"></span></a>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="bg-jb-navy text-white font-changa text-lg px-4 py-2 rounded-md mb-4">Tips & Rekomendasi Ramadhan</div>
+                                    <div class="max-h-[235px] overflow-y-auto scrollbar-thin scrollbar-thumb-jb-navy scrollbar-track-jb-seablue scrollbar-rounded-full pl-2 pr-6 md:max-h-[300px]">
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="index-tipsramadan.html" class="text-jb-red text-sm flex items-center gap-2 font-bold my-4">Selengkapnya <span class="bg-[url(../images/icon-right.png)] bg-cover bg-no-repeat w-3 h-3 inline-block"></span></a>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="bg-jb-navy text-white font-changa text-lg px-4 py-2 rounded-md mb-4">Amalan Ramadhan</div>
+                                    <div class="max-h-[235px] overflow-y-auto scrollbar-thin scrollbar-thumb-jb-navy scrollbar-track-jb-seablue scrollbar-rounded-full pl-2 pr-6 md:max-h-[300px]">
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="detail-jurnal.html">
+                                            <div class="flex gap-4 py-3">
+                                                <div class="text-jb-navy">
+                                                    <p class="h-18 font-bold line-clamp-3 leading-normal">Bolehkah Menggabungkan Puasa Syawal dan Ganti Utang Puasa Ramadhan? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi!</p>
+                                                    <small>03/05/2022, 07:30 WIB</small>
+                                                </div>
+                                                <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
+                                                    <img src="https://asset.kompas.com/crops/lhGCK28GXMH0czcp_u494n1H1Kw=/0x0:0x0/750x500/data/photo/2022/04/02/6247a22eac2e1.jpg" alt="" class="h-full object-cover" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="index-amalanramadan.html" class="text-jb-red text-sm flex items-center gap-2 font-bold my-4">Selengkapnya <span class="bg-[url(../images/icon-right.png)] bg-cover bg-no-repeat w-3 h-3 inline-block"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="bg-jb-lightblue bg-no-repeat bg-section-4">
+                        <div class="container px-5 py-8 md:py-12">
+                            <div class="grid gap-6 md:grid-cols-2 md:gap-20 md:items-center">
+                                <div>
+                                    <h1 class="text-2xl font-changa mt-3 text-jb-navy md:text-4xl">Jernih Berdakwah</h1>
+                                    <p class="text-jb-navy mt-2">Bukan sekadar mengingatkan, tapi menuntun kamu menuju jalan kebaikan.</p>
+                                </div>
+                                <div class="slider-dakwah">
+                                    <div class="relative w-60">
+                                        <a href="index-berdakwah.html">
+                                            <img src="images/cover-dakwah.png" alt="" class="w-full" />
+                                            <div class="w-10 h-10 absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                                <img src="images/icon-play.svg" alt="" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="relative w-60">
+                                        <a href="index-berdakwah.html">
+                                            <img src="images/cover-dakwah.png" alt="" class="w-full" />
+                                            <div class="w-10 h-10 absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                                <img src="images/icon-play.svg" alt="" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="relative w-60">
+                                        <a href="index-berdakwah.html">
+                                            <img src="images/cover-dakwah.png" alt="" class="w-full" />
+                                            <div class="w-10 h-10 absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                                <img src="images/icon-play.svg" alt="" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="relative w-60">
+                                        <a href="index-berdakwah.html">
+                                            <img src="images/cover-dakwah.png" alt="" class="w-full" />
+                                            <div class="w-10 h-10 absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                                <img src="images/icon-play.svg" alt="" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="relative w-60">
+                                        <a href="index-berdakwah.html">
+                                            <img src="images/cover-dakwah.png" alt="" class="w-full" />
+                                            <div class="w-10 h-10 absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                                <img src="images/icon-play.svg" alt="" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="relative w-60">
+                                        <a href="index-berdakwah.html">
+                                            <img src="images/cover-dakwah.png" alt="" class="w-full" />
+                                            <div class="w-10 h-10 absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                                <img src="images/icon-play.svg" alt="" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="index-berdakwah.html" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mt-4 mx-auto md:mt-8">Selengkapnya <span class="bg-[url(../images/icon-right.png)] bg-cover bg-no-repeat w-4 h-4 inline-block brightness-300"></span></a>
+                        </div>
+                    </section>
+
+                    <section class="bg-no-repeat">
+                        <div class="container px-5 py-8 md:py-12">
+                            <div class="flex gap-6 flex-col justify-center md:flex-row">
+                                <a href="kalorimeter.html">
+                                    <img src="images/sect-kalorimeter.png" alt="" />
+                                </a>
+                                <a href="kalkulatorzakat.html">
+                                    <img src="images/sect-kalkulatorzakat.png" alt="" />
+                                </a>
+                                <!-- <a href="#">
+                                <img src="images/sect-petualanganramadan.png" alt="" />
+                            </a> -->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="page-section" id="kebahagiaan">
+                    <section class="bg-jb-green bg-no-repeat bg-section-6">
+                        <div class="container px-5 py-8 md:py-12">
+                            <div class="grid gap-6 md:grid-cols-2 md:gap-20 md:items-center">
+                                <div>
+                                    <div>
+                                        <h1 class="text-2xl font-changa text-white md:text-4xl">Hikayat Ramadhan</h1>
+                                        <p class="text-white mt-2">Jernih memaknai bulan suci Ramadhan di Indonesia dan dunia dari sudut pandang yang berbeda</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slider-slidestory">
+                                        <div>
+                                            <a href="https://tap.kompas.com/menyingkap-sejarah-perayaan-tahun-baru-dan-tradisinya-di-dunia">
+                                                <img src="images/cover-slidestory.png" alt="" class="w-full" />
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://tap.kompas.com/menyingkap-sejarah-perayaan-tahun-baru-dan-tradisinya-di-dunia">
+                                                <img src="images/cover-slidestory.png" alt="" class="w-full" />
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://tap.kompas.com/menyingkap-sejarah-perayaan-tahun-baru-dan-tradisinya-di-dunia">
+                                                <img src="images/cover-slidestory.png" alt="" class="w-full" />
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://tap.kompas.com/menyingkap-sejarah-perayaan-tahun-baru-dan-tradisinya-di-dunia">
+                                                <img src="images/cover-slidestory.png" alt="" class="w-full" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="index-slidestory.html" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mt-4 mx-auto md:mt-8">Selengkapnya <span class="bg-[url(../images/icon-right.png)] bg-cover bg-no-repeat w-4 h-4 inline-block brightness-300"></span></a>
+                        </div>
+                    </section>
+
+                    <section class="bg-jb-yellow bg-no-repeat bg-section-7">
+                        <div class="container px-5 py-8 md:py-12">
+                            <h1 class="text-2xl font-changa text-jb-navy mb-6 md:text-4xl">Gamification</h1>
+
+                            <div class="slider-gamification p-2">
+                                <div>
+                                    <div class="rounded-xl overflow-hidden shadow-rounded">
+                                        <a href="game-parcel.html">
+                                            <img src="images/cover-game-1.png" alt="" class="w-full" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="rounded-xl overflow-hidden shadow-rounded">
+                                        <a href="game-taptap.html">
+                                            <img src="images/cover-game-2.png" alt="" class="w-full" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="rounded-xl overflow-hidden shadow-rounded">
+                                        <a href="game-kejar.html">
+                                            <img src="images/cover-game-3.png" alt="" class="w-full" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="rounded-xl overflow-hidden shadow-rounded">
+                                        <a href="game-flip.html">
+                                            <img src="images/cover-game-4.png" alt="" class="w-full" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="rounded-xl overflow-hidden shadow-rounded">
+                                        <a href="game-byebye.html">
+                                            <img src="images/cover-game-5.png" alt="" class="w-full" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="page-section" id="silaturahmi">
+                    <section class="bg-jb-lightgreen bg-no-repeat bg-section-8">
+                        <div class="container px-5 py-8 md:py-12">
+                            <div class="grid gap-6 md:grid-cols-2 md:gap-20 md:items-center">
+                                <div>
+                                    <h1 class="text-2xl font-changa mt-3 text-jb-navy md:text-4xl">Kartu Lebaran</h1>
+                                    <p class="text-jb-navy mt-2">Bikin sendiri kartu ucapan kamu dengan template ini!</p>
+                                    <a href="detail-ecard.html" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mt-4 mx-auto md:mt-8">Buat Sekarang</a>
+                                </div>
+                                <div>
+                                    <div class="slider-ecard">
+                                        <div>
+                                            <img src="images/cover-ecard.jpg" alt="" class="w-full" />
+                                        </div>
+                                        <div>
+                                            <img src="images/cover-ecard.jpg" alt="" class="w-full" />
+                                        </div>
+                                        <div>
+                                            <img src="images/cover-ecard.jpg" alt="" class="w-full" />
+                                        </div>
+                                        <div>
+                                            <img src="images/cover-ecard.jpg" alt="" class="w-full" />
+                                        </div>
+                                    </div>
+                                    <a href="index-ecard.html" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mt-4 mx-auto md:mt-8">Selengkapnya <span class="bg-[url(../images/icon-right.png)] bg-cover bg-no-repeat w-4 h-4 inline-block brightness-300"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="bg-cover bg-center bg-no-repeat bg-section-9">
+                        <div class="container px-5 py-8 md:py-12">
+                            <div class="flex justify-between items-center">
+                                <h1 class="text-2xl font-changa mt-3 text-jb-navy md:text-4xl">PETA MUDIK</h1>
+                            </div>
+                            <p class="text-jb-navy mt-2">Temukan informasi yang kamu butuhkan untuk perjalanan mudik yang lebih nyaman dan menyenangkan</p>
+                            <div class="flex justify-center my-5 outline-none">
+                                <select name="" id="opsi-peta-mudik" class="w-full lg:w-80 rounded-lg px-5 py-3 bg-jb-red text-white font-semibold bg-blue1 text-center appearance-none bg-[url(../images/icon-down.png)] bg-no-repeat bg-[right_10px_top_50%] bg-[length:14px_10px] lg:text-left">
+                                    <option value="pilih" class="py-2" disabled selected>Pilih Provinsi</option>
+                                    <option value="sumatera" class="py-2">Sumatera</option>
+                                    <option value="jawa" class="py-2">Jawa</option>
+                                    <option value="bali" class="py-2">Bali dan Nusa Tenggara</option>
+                                    <option value="kalimantan" class="py-2">Kalimantan</option>
+                                    <option value="sulawesi" class="py-2">Sulawesi</option>
+                                    <option value="papua" class="py-2">Papua</option>
+                                </select>
+                            </div>
+                            <div class="relative w-screen overflow-x-auto scrollbar -mx-5 px-5 peta-mudik lg:w-full lg:mx-auto lg:p-0" id="peta-mudik">
+                                <img class="w-[1000px] max-w-none m-auto" src="images/peta-mudik.png" alt="" />
+                                <div class="absolute top-0 left-[22px] right-0 bottom-0 w-[1000px] h-full m-auto lg:left-0">
+                                    <div class="cursor-pointer absolute top-0 left-[30px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img src="images/pin-nad.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[40px] left-[80px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-su.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[110px] left-[110px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-sb.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[85px] left-[130px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-r.png" alt="" />
+                                    </div>
+                                    <!-- <div class="cursor-pointer absolute top-[70px] left-[190px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-kr.png" alt="" />
+                            </div> -->
+                                    <div class="cursor-pointer absolute top-[130px] left-[150px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-jm.png" alt="" />
+                                    </div>
+                                    <!-- <div class="cursor-pointer absolute top-[170px] left-[150px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-b.png" alt="" />
+                            </div> -->
+                                    <div class="cursor-pointer absolute top-[170px] left-[185px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-ss.png" alt="" />
+                                    </div>
+                                    <!-- <div class="cursor-pointer absolute top-[140px] left-[225px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-bb.png" alt="" />
+                            </div> -->
+                                    <div class="cursor-pointer absolute top-[200px] left-[200px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-l.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[110px] left-[330px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-kb.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[130px] left-[400px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-kt.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[30px] left-[452px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-ku.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[90px] left-[455px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-ktm.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[160px] left-[430px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-ks.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[235px] left-[225px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-bt.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[225px] left-[245px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-j.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[250px] left-[265px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-jb.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[250px] left-[300px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-jt.png" alt="" />
+                                    </div>
+                                    <!-- <div class="cursor-pointer absolute top-[265px] left-[322px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-diy.png" alt="" />
+                            </div> -->
+                                    <div class="cursor-pointer absolute top-[265px] left-[370px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-jtm.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[275px] left-[425px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-bl.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[280px] left-[470px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-ntb.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[280px] left-[540px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-ntt.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[150px] left-[513px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-slb.png" alt="" />
+                                    </div>
+                                    <!-- <div class="cursor-pointer absolute top-[75px] left-[580px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-g.png" alt="" />
+                            </div> -->
+                                    <div class="cursor-pointer absolute top-[75px] left-[620px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-slu.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[127px] left-[550px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-slt.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[200px] left-[528px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-sls.png" alt="" />
+                                    </div>
+                                    <div class="cursor-pointer absolute top-[180px] left-[575px] peta-pin" data-micromodal-trigger="modal-peta">
+                                        <img class="w-auto" src="images/pin-sltg.png" alt="" />
+                                    </div>
+                                    <!-- <div class="cursor-pointer absolute top-[75px] left-[703px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-mu.png" alt="" />
+                            </div> -->
+                                    <!-- <div class="cursor-pointer absolute top-[160px] left-[735px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-m.png" alt="" />
+                            </div> -->
+                                    <!-- <div class="cursor-pointer absolute top-[120px] left-[790px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-pbd.png" alt="" />
+                            </div> -->
+                                    <!-- <div class="cursor-pointer absolute top-[160px] left-[825px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-pb.png" alt="" />
+                            </div> -->
+                                    <!-- <div class="cursor-pointer absolute top-[150px] left-[925px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-p.png" alt="" />
+                            </div> -->
+                                    <!-- <div class="cursor-pointer absolute top-[180px] left-[890px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-pt.png" alt="" />
+                            </div> -->
+                                    <!-- <div class="cursor-pointer absolute top-[195px] left-[960px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-pp.png" alt="" />
+                            </div> -->
+                                    <!-- <div class="cursor-pointer absolute top-[250px] left-[960px] peta-pin" data-micromodal-trigger="modal-peta">
+                                <img class="w-auto" src="images/pin-ps.png" alt="" />
+                            </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <footer class="bg-jb-blue">
+                <div class="container text-center px-5 py-8">
+                    <div class="w-32 mx-auto">
+                        <img src="images/logo-jernihberbagi-white.svg" alt="" />
+                    </div>
+                    <p class="text-xs text-jb-red mt-2">&#169; 2022 Kompascom. All Rights Reserved</p>
+                </div>
+            </footer>
+        </div>
+
+        <!-- [modal peta] -->
+        <div class="modal modal__dark micromodal-slide" id="modal-peta" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container modal__container__fix modal__border" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content" id="modal-1-content">
+                        <h1 class="text-2xl font-changa text-jb-navy mb-4 md:text-4xl">PROVINSI DKI JAKARTA</h1>
+                        <div class="tabs overflow-hidden">
+                            <div class="tab w-full overflow-hidden">
+                                <input type="radio" id="rd1" name="rd" />
+                                <label class="tab-label flex justify-between items-center rounded-lg my-2 px-4 py-2 bg-jb-blue text-white font-bold cursor-pointer transition-all after:w-4 after:h-4 after:bg-[url(../images/icon-right.png)] after:bg-cover after:bg-no-repeat" for="rd1">Layanan Kesehatan</label>
+                                <div class="tab-content overflow-y-scroll scrollbar-thin scrollbar-thumb-jb-yellow scrollbar-track-jb-navy scrollbar-rounded-full max-h-0 px-4 transition-all">
+                                    <ul>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab w-full overflow-hidden">
+                                <input type="radio" id="rd2" name="rd" />
+                                <label class="tab-label flex justify-between items-center rounded-lg my-2 px-4 py-2 bg-[#39B54A] text-white font-bold cursor-pointer transition-all after:w-4 after:h-4 after:bg-[url(../images/icon-right.png)] after:bg-cover after:bg-no-repeat" for="rd2">Wisata</label>
+                                <div class="tab-content overflow-y-scroll scrollbar-thin scrollbar-thumb-jb-yellow scrollbar-track-jb-navy scrollbar-rounded-full max-h-0 px-4 transition-all">
+                                    <ul>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab w-full overflow-hidden">
+                                <input type="radio" id="rd3" name="rd" />
+                                <label class="tab-label flex justify-between items-center rounded-lg my-2 px-4 py-2 bg-[#C1272D] text-white font-bold cursor-pointer transition-all after:w-4 after:h-4 after:bg-[url(../images/icon-right.png)] after:bg-cover after:bg-no-repeat" for="rd3">Kuliner</label>
+                                <div class="tab-content overflow-y-scroll scrollbar-thin scrollbar-thumb-jb-yellow scrollbar-track-jb-navy scrollbar-rounded-full max-h-0 px-4 transition-all">
+                                    <ul>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm font-bold md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm font-bold md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                        <li class="flex items-center gap-2 border-b border-solid border-b-black/60 py-2 md:py-4">
+                                            <div class="grow">
+                                                <p class="text-sm font-bold md:text-base">RSUPN Dr. Cipto Mangunkusumo</p>
+                                                <p class="text-xs mt-1 md:text-sm">Jl. Pangeran Diponegoro No. 71, RW. 5 - 1 500 135</p>
+                                            </div>
+                                            <a href="https://goo.gl/maps/A2iuL6WJRzmDQqQX6" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mx-auto shrink-0">Directions</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <footer class="modal__footer"></footer>
+                </div>
+            </div>
+        </div>
+
+        <!-- [modal identitas] -->
+        <div class="modal modal__dark micromodal-slide" id="modal-identitas" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container modal__container__fix modal__border" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content" id="modal-1-content">
+                        <div class="text-jb-navy font-bold mt-4 mb-2 text-center">Lengkapi identitasmu untuk menukarkan poin</div>
+                        <form action="index-verif-success.html">
+                            <input type="text" name="nama" id="" placeholder="Nama" class="border border-jb-navy my-2 py-1 px-3 w-full rounded-3xl" />
+                            <input type="text" name="telepon" id="" placeholder="Nomor Telepon" class="border border-jb-navy my-2 py-1 px-3 w-full rounded-3xl" />
+                            <label for="uploadktp" class="text-jb-navy text-left block font-bold mb-1">Foto KTP</label>
+                            <input type="file" name="" id="uploadktp" class="text-sm w-full" />
+                            <input type="submit" value="Submit" class="text-white font-bold bg-jb-red py-1 px-8 rounded-full block mx-auto mt-4 modal__closetrigger" />
+                        </form>
+                    </main>
+                    <footer class="modal__footer"></footer>
+                </div>
+            </div>
+        </div>
+
+        <!-- [modal verif-failed] -->
+        <div class="modal modal__dark micromodal-slide" id="modal-verif-failed" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container modal__container__fix modal__border" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content" id="modal-1-content">
+                        <img src="images/icon-popup.svg" alt="" class="w-20 mx-auto mb-4" />
+                        <p class="text-jb-navy font-bold text-center">Maaf, data yang anda isi belum lengkap</p>
+                    </main>
+                    <footer class="modal__footer"></footer>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/tiny-slider.js"></script>
+        <script src="js/micromodal.min.js"></script>
+        <script src="js/jernihberbagi.js"></script>
+    </body>
+</html>

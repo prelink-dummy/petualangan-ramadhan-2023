@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Parcel Ramadan Game</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="Parcel Ramadan Game" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="images/share-img.jpg" />
+    <meta property="og:site_name" content="-" />
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="324557847592228" />
+
+    <!-- S:tweeter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@kompascom" />
+    <meta name="twitter:creator" content="@kompascom" />
+    <meta name="twitter:title" content="Parcel Ramadan Game" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="images/share-img.jpg" />
+    <!-- E:tweeter card -->
+
+    <link rel="apple-touch-icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+    <link rel="shortcut icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/parcelramadan.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="ad-container">
+            <audio controls loop class="bg__sound hidden">
+                <source src="sound/bgm.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+
+            <img src="images/background.jpg" id="bg" />
+            <img src="images/logo-kompas.png" id="logokompas">
+            <img src="images/logo1.png" id="front">
+            <img src="images/front.png" id="frontimg" />
+            <img src="images/table.jpg" id="table">
+
+            <button class="btn btn__primary" id="cta_start">Main Sekarang</button>
+            <button class="btn" id="gamemekanisme">Syarat dan Ketentuan</button>
+
+            <div id="myelement">
+                <div id="itemhit"></div>
+                <img src="images/point.png" id="pts" />
+                <img src="images/catcher.png" id="catcher" />
+            </div>
+
+            <div id="items_cont">
+                <img src="images/item-1.png" id="in1" class="flyingthings" />
+                <img src="images/item-2.png" id="in2" class="flyingthings" />
+                <img src="images/item-3.png" id="in3" class="flyingthings" />
+                <img src="images/item-4.png" id="in4" class="flyingthings" />
+                <img src="images/item-5.png" id="in5" class="flyingthings" />
+                <img src="images/item-6.png" id="in6" class="flyingthings" />
+            </div>
+
+            <div id="indicator_fill"></div>
+
+            <div id="timer">
+                <div id="stopwatch">00:30</div>
+            </div>
+
+            <div id="gameend">
+                <img src="images/end.png" id="lastimg" />
+
+                <div id="endtitle">
+                    Selamat! Kamu berhasil <br>
+                    mendapatkan <span id="totalpoints">0</span> Poin!
+                    <br />
+                    <br />
+                    Yuk Mainkan Game Lainnya!
+                </div>
+
+                <button class="btn btn__primary" id="gamereplay">Main Lagi</button>
+
+                <div class="socials__wrap">
+                    <p>Ajak teman ikutan</p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/facebook.png" alt="">
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?text=Flipcard Game&amp;url=#" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/twitter.png" alt="">
+                            </div>
+                        </a>
+                        <a href="whatsapp://send?text=FLipcard Game #" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/whatsapp.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank" class="socials__btn">
+                            <div>
+                                <img src="images/link.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="muted hidden">
+                <img src="images/sound-muted.png" alt="" />
+            </div>
+
+            <div class="unmuted hidden">
+                <img src="images/sound-unmuted.png" alt="" />
+            </div>
+
+            <div id="popup">
+                <div id="popup__wrap">
+                    <div id="popup__close">
+                        <img src="images/icon-close.png" alt="" />
+                    </div>
+                    <h3>Syarat & Ketentuan</h3>
+                    <ul>
+                        <li>
+                            Geser ke kanan dan ke kiri untuk memasukkan objek kedalam keranjang
+                        </li>
+                        <li>
+                            Kamu dapat 1 poin untuk setiap objek yang kamu kumpulkan (maksimal 30 poin)
+                        </li>
+                        <li>
+                            Jangan lupa log in dulu sebelum bermain
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="js/hammer.2.0.8.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery-collision.min.js"></script>
+    <script src="js/parcelramadan.js"></script>
+</body>
+
+</html>

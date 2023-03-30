@@ -1,0 +1,302 @@
+.km {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+.km__title {
+    width: 230px;
+    margin: 0 auto 5px;
+    text-align: center;
+}
+
+.km__subtitle {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.km__sub {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    width: 170px;
+    padding: 7px 3px 5px;
+    margin: 10px auto 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.km__foods {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.km__slider {
+    width: 100%;
+    margin: auto;
+}
+
+.km__hidden {
+    display: none;
+}
+
+.km__sliderwrap {
+    position: relative;
+    width: 100%;
+    height: 145px;
+}
+
+.km_sliderwrap--hundred {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.km__slider--item {
+    width: 250px;
+    margin: auto;
+    height: 145px;
+    border: solid 6px #fff;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.km__slider--item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.km__optionwrap {
+    position: relative;
+    width: 100%;
+}
+
+.km__dropdown {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #9FDFFF;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    border-left: solid 6px #fff;
+    border-right: solid 6px #fff;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../images/kalorimeter/down.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+}
+
+#highlighted {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.km__info {
+    display: flex;
+    border: solid 6px #fff;
+    background: #fff;
+}
+
+.km__info--weight {
+    width: 55%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.km__info--weight p {
+    line-height: 1.5;
+}
+
+.km__info--weight small {
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+.km__info--calories {
+    padding: 15px;
+    background-color: #FAB20E;
+    width: 45%;
+    border-radius: 10px;
+    color: #000;
+}
+
+.km__info--content {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.km__info--value {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.km__info--content img {
+    width: 10px;
+    height: 13px;
+    filter: invert(1);
+}
+
+.km__article {
+    width: 250px;
+    margin: auto;
+    position: relative;
+}
+
+.km__article--title {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+.km__article--item {
+    background-color: #fff;
+    padding: 15px 15px 30px;
+    border-radius: 0 0 20px 20px;
+}
+
+.km__article--item a {
+    display: flex !important;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.km__article--img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.km__article--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.km__article--newstitle {
+    font-size: 14px;
+    text-align: left;
+}
+
+.slick-arrow {
+    width: 25px;
+    height: 25px;
+    border: none;
+    z-index: 2;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.slick-arrow.arrow-prev {
+    background-image: url(../images/kalorimeter/arrow-left.png);
+    position: absolute;
+    top: 40%;
+    left: -13px;
+}
+
+.slick-arrow.arrow-next {
+    background-image: url(../images/kalorimeter/arrow-right.png);
+    position: absolute;
+    top: 40%;
+    right: -13px;
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    gap: 10px;
+}
+
+.slick-dots li {
+    background: transparent;
+    list-style: none;
+}
+
+.slick-dots li::marker {
+    content: "";
+}
+
+.slick-dots li button {
+    padding: 4px;
+    border: solid 1px #1B3266;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.slick-dots li.slick-active button {
+    border: solid 1px #1B3266;
+    background: #1B3266;
+}
+
+.slick-arrow[aria-disabled="true"] {
+    opacity: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .km__subtitle {
+        font-size: 16px;
+    }
+
+    .km__dropdown {
+        font-size: 16px;
+    }
+
+    .km__info--content {
+        font-size: 16px;
+    }
+
+    .km__info--value {
+        font-size: 40px;
+    }
+    
+    .km__info--weight {
+        font-size: 16px;
+    }
+
+    .km__info--weight small {
+        font-size: 10px;
+    }
+
+    .km__article--title {
+        font-size: 14px;
+    }
+
+    .km__article--newstitle {
+        font-size: 16px;
+    }
+
+    .km__article--img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .km__foods,
+    .km__article {
+        width: 80%;
+    }
+}

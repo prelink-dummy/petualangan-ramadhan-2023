@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ramadan Jernih Berbagi - Kompas.com</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="apple-touch-icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+    <link rel="shortcut icon" href="https://www.kgmedia.id/assets/images/favicon-16x16.png" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="fixed w-full bg-jb-lightgreen bg-no-repeat bg-right-top bg-contain z-10 bg-header transition-all lg:rounded-none">
+            <div class="header-container container px-5 py-3 relative h-[52px] flex items-center justify-between lg:h-auto lg:flex-col">
+                <div class="header-logo w-16 transition-all overflow-hidden lg:max-h-14 lg:mx-auto lg:w-32">
+                    <a href="index.html">
+                        <img src="images/logo-jernihberbagi.svg" alt="" />
+                    </a>
+                </div>
+                <div class="header-mobile w-10 lg:hidden">
+                    <img src="images/menu.svg" alt="" />
+                </div>
+                <div class="menu-mobile absolute top-[52px] w-full left-0 bg-jb-blue text-white p-2 overflow-x-scroll flex gap-4 scrollbar-none lg:hidden">
+                    <a href="index.html#pengetahuan" class="shrink-0 text-xs font-bold">Jernih Berbagi Pengetahuan</a>
+                    <a href="index.html#kebahagiaan" class="shrink-0 text-xs font-bold">Jernih Berbagi kebahagiaan</a>
+                    <a href="index.html#silaturahmi" class="shrink-0 text-xs font-bold">Jernih Bersilaturahmi</a>
+                </div>
+                <div class="header-menu absolute top-[84px] left-0 w-screen max-h-0 bg-jb-lightgreen rounded-b-2xl overflow-hidden transition-all lg:rounded-none lg:relative lg:top-0 lg:w-full lg:bg-transparent lg:mt-4 lg:max-h-max lg:overflow-visible">
+                    <ul class="menu-inner px-5 py-2 lg:flex lg:justify-around lg:py-0 lg:items-center">
+                        <li class="relative py-2 text-sm font-bold hidden lg:block ">
+                            <a href="index.html#pengetahuan" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERBAGI PENGETAHUAN </a>
+                        </li>
+                        <li class="relative py-2 text-sm font-bold hidden lg:block ">
+                            <a href="index.html#kebahagiaan" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERBAGI KEBAHAGIAAN </a>
+                        </li>
+                        <li class="relative py-2 text-sm font-bold hidden lg:block ">
+                            <a href="index.html#silaturahmi" class="relative w-full inline-block text-jb-blue transition-colors hover:text-jb-red"> JERNIH BERSILATURAHMI </a>
+                        </li>
+                        <li class="relative py-2 text-sm font-bold lg:p-0 ">
+                            <div class="profile-trigger relative w-full text-jb-blue transition-colors hidden cursor-default lg:block">
+                                <div class="flex gap-2 items-center">
+                                    <div class="w-4 h-4">
+                                        <img src="images/icon-profil.svg" alt="" />
+                                    </div>
+                                    <div>
+                                        <p>Hi, <span>User1234</span></p>
+                                        <p class="text-xs font-normal">Poin: <span>0</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-tulip lg:hidden lg:absolute lg:right-0 lg:w-72 lg:p-4 lg:rounded-xl lg:bg-jb-lightgreen">
+                                <div class="flex items-center justify-between mb-2 md:border-b md:border-b-jb-blue/50 md:pb-2">
+                                    <div class="flex gap-2 items-center">
+                                        <div class="max-w-[25px] h-[25px] rounded-[50%] overflow-hidden">
+                                            <img src="images/icon-profil.svg" alt="" class="w-full" />
+                                        </div>
+                                        <div class="text-left">
+                                            <a href="dashboard.html" class="block">
+                                                <p class="text-jb-blue font-bold text-sm text-left">Hi, <span>User1234!</span></p>
+                                                <div class="text-jb-yellow text-xs leading-none py-1">Lihat Profil</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="text-jb-blue text-xs text-left">Poin: 0</p>
+                                </div>
+                                <div class="text-center my-2 md:border-0">
+                                    <p class="text-xs text-jb-blue mb-2">Kumpulkan poin dengan ikut aktivitasnya</p>
+                                    <a href="dashboard.html" class="bg-jb-blue py-2 px-4 text-xs rounded-2xl text-white font-bold shadow w-full block">Kumpulkan poin sekarang</a>
+                                </div>
+                                <div class="bg-jb-green rounded-xl p-2 border text-center md:p-4">
+                                    <p class="text-xs text-white mb-2">Verifikasikan data dirimu untuk menukarkan poin</p>
+                                    <button class="bg-jb-yellow py-2 px-4 text-xs rounded-2xl text-white font-bold w-full" data-micromodal-trigger="modal-identitas">Verifikasi Sekarang</button>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="pt-16 lg:pt-32">
+            <section class="bg-cover bg-center bg-no-repeat bg-main">
+                <div class="container px-5 pt-10 pb-8">
+                    <a href="index-playlist.html" class="bg-jb-lime px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-jb-navy rounded-full mb-4 md:mb-8"><span class="bg-[url(../images/icon-back.svg)] bg-cover bg-no-repeat w-4 h-4 inline-block"></span>Kembali</a>
+                    <div class="max-w-xl mx-auto">
+                        <h1 class="text-jb-navy font-bold text-2xl">Muhammadiyah Tetapkan Awal Puasa Ramadhan Jatuh Pada 23 Maret 2023</h1>
+                        <div class="w-full mx-auto overflow-hidden my-4 aspect-video">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/g2cyw0r7DlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="text-jb-navy">
+                            Gabung siaran live-nya dan dapatkan berbagai insight jernih dan menarik!
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=g2cyw0r7DlU" target="_blank" class="bg-jb-red px-4 py-2 text-sm flex items-center gap-2 w-fit font-bold text-white rounded-full mt-4 mx-auto md:mt-8 md:text-base">Tonton di YouTube</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-jb-blue">
+            <div class="container text-center px-5 py-8">
+                <div class="w-32 mx-auto">
+                    <img src="images/logo-jernihberbagi-white.svg" alt="" />
+                </div>
+                <p class="text-xs text-jb-red mt-2">&#169; 2022 Kompascom. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- [modal identitas] -->
+    <div class="modal modal__dark micromodal-slide" id="modal-identitas" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container modal__container__fix modal__border" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <div class="text-jb-navy font-bold mt-4 mb-2 text-center">Lengkapi identitasmu untuk menukarkan poin</div>
+                    <form action="index-verif-success.html">
+                        <input type="text" name="nama" id="" placeholder="Nama" class="border border-jb-navy my-2 py-1 px-3 w-full rounded-3xl">
+                        <input type="text" name="telepon" id="" placeholder="Nomor Telepon" class="border border-jb-navy my-2 py-1 px-3 w-full rounded-3xl">
+                        <label for="uploadktp" class="text-jb-navy text-left block font-bold mb-1">Foto KTP</label>
+                        <input type="file" name="" id="uploadktp" class="text-sm w-full">
+                        <input type="submit" value="Submit" class="text-white font-bold bg-jb-red py-1 px-8 rounded-full block mx-auto mt-4 modal__closetrigger">
+                    </form>
+                </main>
+                <footer class="modal__footer"></footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/micromodal.min.js"></script>
+    <script src="js/jernihberbagi.js"></script>
+</body>
+
+</html>
