@@ -3089,6 +3089,19 @@ body {
         height: 15px;
         width: 15px;
       }
+
+      @include max-responsive($sm) {
+        padding: 8px 20px;
+        padding-left: 35px !important;
+        font-size: 12px;
+
+        &::before {
+          width: 14px;
+          height: 14px;
+          left: 20px;
+          top: 20px;
+        }
+      }
     }
     
     &__calendar {
