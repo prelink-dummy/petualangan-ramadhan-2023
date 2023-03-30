@@ -813,7 +813,7 @@ body {
           background-image: url('../images/logo-bsi-hero.png'),
             url('../images/petualangan-ramadhan-icon.png');
           background-repeat: no-repeat;
-          background-position: 30px 10px, 90% center;
+          background-position: 30px 20px, 90% center;
           background-size: 300px, 280px;
 
           &__textcontent {
@@ -862,8 +862,8 @@ body {
           height: 307px;
 
           &__inner {
-            background-position: 10px 0px, 95% 35%;
-            background-size: 200px, 100px;
+            background-position: 18px 15px, 95% 35%;
+            background-size: 200px, 130px;
             width: 100%;
             align-items: center;
             justify-content: flex-start !important;
@@ -876,23 +876,23 @@ body {
               padding-left: 1em;
 
               &__title {
-                font-size: 16px;
+                font-size: 22px;
                 padding-bottom: 5px;
               }
   
               &__subtitle {
                 &--1 {
                   margin-top: 0px;
-                  font-size: 12px;
+                  font-size: 14px;
                 }
   
                 &--2 {
                   position: absolute;
-                  right: 0%;
+                  right: 5%;
                   bottom: 10%;
-                  width: 45%;
+                  width: 40%;
                   margin-top: 5em;
-                  font-size: 12px
+                  font-size: 14px
                 }
               }
             }
