@@ -130,6 +130,7 @@ body {
     width: 60%;
     margin: 0 auto;
     margin-top: 2em;
+    text-align: center;
 
     &__leaderboard {
       margin-top: 1em;
@@ -138,8 +139,10 @@ body {
 
     &__content {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-
+      align-items: center;
+      
       &__logo {
         width: 100%;
         img {
@@ -152,7 +155,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        flex-direction: column-reverse;
+        margin-top: 1em;
 
         span {
           display: flex;
@@ -160,7 +164,7 @@ body {
           align-items: center;
 
           img {
-            width: 120px;
+            width: 300px;
           }
         }
 
@@ -188,12 +192,13 @@ body {
           margin-top: 2em;
           span {
             img {
-              width: 140px;
+              width: 200px;
               margin-right: 0.1em;
             }
           }
           p {
             line-height: 1.4;
+            width: 100%;
           }
         }
       }
